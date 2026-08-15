@@ -25,9 +25,12 @@ const state = {
  * Stored so a reload keeps the choice, and defaults to the OS preference the
  * first time rather than assuming dark. */
 const root = document.documentElement;
+// Paper is this report's primary theme, so an unset preference opens light —
+// only an explicit OS preference for dark switches it. The fleet console next
+// door does the opposite, because it is a different kind of thing.
 const savedTheme = localStorage.getItem("soh-theme");
 root.dataset.theme = savedTheme
-  || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+  || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
 
 $("#theme-toggle").addEventListener("click", () => {
   root.dataset.theme = root.dataset.theme === "dark" ? "light" : "dark";
