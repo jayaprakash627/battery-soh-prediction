@@ -104,9 +104,9 @@ FEATURES: tuple[Feature, ...] = (
         name="window_charge_ah",
         unit="Ah",
         physics=(
-            "Charge accepted between 3.90 V and 4.15 V — current integrated "
-            "over the window. As lithium is consumed by SEI growth the cell "
-            "holds less, so it crosses the same voltage window on less charge."
+            "How much charge the battery takes in while its voltage climbs from "
+            "3.90 V to 4.15 V. An older battery holds less, so it needs less "
+            "charge to cross that range."
         ),
         direction="higher = healthier",
     ),
@@ -114,10 +114,9 @@ FEATURES: tuple[Feature, ...] = (
         name="ic_peak_height",
         unit="Ah/V",
         physics=(
-            "Peak of dQ/dV — incremental capacity — inside the window. Each "
-            "peak is a phase transition in the electrode; its height scales "
-            "with how much active material is still taking part. Loss of "
-            "active material flattens it."
+            "The biggest jump in stored charge for a small step in voltage. It "
+            "shows how much of the battery is still doing work. As a battery "
+            "wears out, this gets smaller."
         ),
         direction="higher = healthier",
     ),
@@ -125,10 +124,9 @@ FEATURES: tuple[Feature, ...] = (
         name="ic_peak_voltage",
         unit="V",
         physics=(
-            "Where in the window that peak sits. Growing internal resistance "
-            "adds an IR offset to every measured voltage, so the whole feature "
-            "slides upward with age. It separates resistance growth from "
-            "capacity loss, which the height alone cannot."
+            "The voltage at which that jump happens. An old battery has more "
+            "internal resistance, which pushes its voltage up. So this creeps "
+            "higher with age."
         ),
         direction="lower = healthier",
     ),
@@ -136,10 +134,8 @@ FEATURES: tuple[Feature, ...] = (
         name="voltage_slope_v_per_s",
         unit="V/s",
         physics=(
-            "How fast voltage rises through the window. The inverse of the "
-            "duration in spirit, but computed by least squares over every "
-            "sample, so it is far less sensitive to noise at the two endpoints "
-            "than a two-point crossing time."
+            "How fast the voltage climbs through the range. A battery that "
+            "holds less charge fills up sooner, so its voltage rises faster."
         ),
         direction="lower = healthier",
     ),
@@ -147,12 +143,9 @@ FEATURES: tuple[Feature, ...] = (
         name="cv_phase_seconds",
         unit="s",
         physics=(
-            "Time spent in the constant-voltage tail, from reaching the "
-            "voltage limit until current decays to 50 mA. A degraded cell hits "
-            "the voltage limit early on resistance alone while still part "
-            "empty, then sits in CV taking the rest of its charge slowly. This "
-            "is the one feature that reads the end of the charge rather than "
-            "the middle."
+            "How long the charger spends topping up at the end, after the "
+            "voltage has hit its limit. A worn battery reaches that limit early "
+            "while still part empty, then takes the rest slowly."
         ),
         direction="shorter = healthier",
     ),
@@ -160,9 +153,9 @@ FEATURES: tuple[Feature, ...] = (
         name="temp_rise_c",
         unit="°C",
         physics=(
-            "Temperature at the top of the window minus temperature at the "
-            "bottom. Ohmic heating goes as I²R, and R grows as the cell ages, "
-            "so the same current warms an old cell more than a new one."
+            "How much the battery warms up while crossing the range. Resistance "
+            "grows as a battery ages, and more resistance means more heat for "
+            "the same current."
         ),
         direction="smaller = healthier",
     ),
@@ -170,10 +163,9 @@ FEATURES: tuple[Feature, ...] = (
         name="temp_max_c",
         unit="°C",
         physics=(
-            "Peak temperature across the whole charge. Partly a health signal "
-            "and partly an ambient one, which is why the rise above is kept "
-            "separately — the difference between the two is roughly the part "
-            "the pack caused rather than the room."
+            "The hottest the battery gets during the whole charge. This is "
+            "partly the battery and partly the room, which is why the warm-up "
+            "above is kept separate."
         ),
         direction="lower = healthier",
     ),
@@ -219,10 +211,10 @@ COLLINEARITY_THRESHOLD = 0.90
 # goes from 1.7 to 4.0. Buying a tidier story with twice the error would be the
 # wrong trade, and pretending the story was tidy would be worse.
 CORRELATION_WARNING = (
-    "window_charge_ah, ic_peak_height and voltage_slope_v_per_s all measure how "
-    "much charge this cell accepts and are correlated above 0.9. Their combined "
-    "contribution is meaningful; how the model divides credit between them is "
-    "not, and one may carry a sign opposite to its physics. Read them as a group."
+    "Three of these bars — charge taken in, the charge jump, and how fast voltage "
+    "rises — all track the same thing, so read them as one group. The group total "
+    "is solid. How the model splits credit between those three is not, and one of "
+    "them can even point the wrong way."
 )
 
 
@@ -259,7 +251,8 @@ def _first_crossing(voltage: np.ndarray, time: np.ndarray, level: float) -> floa
     above = np.flatnonzero(voltage >= level)
     if above.size == 0:
         raise UnusableCharge(
-            f"charge never reaches {level:.2f} V (peak was {voltage.max():.3f} V)"
+            f"This charge never reaches {level:.2f} V. It stops at "
+            f"{voltage.max():.3f} V, so the measuring range is incomplete."
         )
     i = int(above[0])
     if i == 0:
@@ -315,15 +308,22 @@ def extract(
 
     if not (t.size == v.size == i.size == temp.size):
         raise UnusableCharge(
-            f"channel lengths differ: time={t.size}, voltage={v.size}, "
-            f"current={i.size}, temperature={temp.size}"
+            f"The four readings have different lengths: time={t.size}, "
+            f"voltage={v.size}, current={i.size}, temperature={temp.size}. "
+            f"They must all match."
         )
     if t.size < 20:
-        raise UnusableCharge(f"only {t.size} samples; need at least 20")
+        raise UnusableCharge(
+            f"Only {t.size} readings in this charge. At least 20 are needed."
+        )
     if not np.all(np.isfinite(t) & np.isfinite(v) & np.isfinite(i) & np.isfinite(temp)):
-        raise UnusableCharge("channels contain NaN or infinite values")
+        raise UnusableCharge(
+            "Some readings are missing or not a number."
+        )
     if np.any(np.diff(t) < 0):
-        raise UnusableCharge("timestamps are not in increasing order")
+        raise UnusableCharge(
+            "The timestamps go backwards, so the readings are out of order."
+        )
 
     # Charging current is signed positive here. NASA logs it positive on charge
     # and negative on discharge; a charger that reports the other convention
@@ -335,10 +335,10 @@ def extract(
 
     if v_smooth[0] > WINDOW_LOW_V - MIN_RUNUP_V:
         raise UnusableCharge(
-            f"charge starts at {v_smooth[0]:.3f} V, less than {MIN_RUNUP_V:.2f} V "
-            f"below the {WINDOW_LOW_V:.2f} V window start — the pack was already "
-            f"part-charged, so it crosses the window before the current settles "
-            f"and every timing feature reads short"
+            f"This charge starts at {v_smooth[0]:.3f} V. It needs to start below "
+            f"{WINDOW_LOW_V - MIN_RUNUP_V:.2f} V. The battery was already part "
+            f"charged, so it races through the measuring range and every timing "
+            f"reads too low."
         )
 
     t_low = _first_crossing(v_smooth, t, WINDOW_LOW_V)
@@ -357,8 +357,8 @@ def extract(
     in_window = (t >= t_low) & (t <= t_high)
     if in_window.sum() < 5:
         raise UnusableCharge(
-            f"only {int(in_window.sum())} samples inside the voltage window; "
-            f"the log is too coarse to read this charge"
+            f"Only {int(in_window.sum())} readings fall inside the measuring "
+            f"range. The charger logged too rarely to read this charge."
         )
 
     slope = float(np.polyfit(t[in_window], v_smooth[in_window], 1)[0])

@@ -86,8 +86,8 @@ def predict(curve: ChargeCurve) -> dict:
         raise HTTPException(status_code=422, detail={
             "error": "unusable_charge",
             "reason": str(exc),
-            "help": "The model needs a charge that starts below 3.90 V and "
-                    "climbs past 4.15 V, logged at 20+ samples.",
+            "help": "Send a charge that starts below 3.75 V, climbs past "
+                    "4.15 V, and has at least 20 readings.",
         })
 
     try:
@@ -120,7 +120,7 @@ def model_card() -> dict:
         evaluation = json.loads(eval_path.read_text())
 
     return {
-        "kind": "ridge regression on 8 physically-derived features",
+        "kind": f"ridge regression on {len(FEATURES)} measurements taken from one charge",
         "trained_on": mdl.trained_on,
         "honest_performance": mdl.honest_performance,
         "interval": mdl.interval,
@@ -135,21 +135,36 @@ def model_card() -> dict:
         "evaluation": {k: evaluation.get(k) for k in
                        ("selected_model", "shipped_model", "selection_rule",
                         "ship_rule", "models")},
+        # Every number here is read off the trained model, never typed in. An
+        # earlier version of this list said "roughly 70% to 95%" while the model
+        # had actually been trained on 64% to 101%. A limitations section that is
+        # itself inaccurate is worse than none, because it is the part a careful
+        # reader trusts most.
         "limitations": [
-            "Eight 18650 cells from one experiment, all at room temperature "
-            "under one charge/discharge protocol. A "
-            "different chemistry, format or ambient temperature is out of "
-            "scope until it has been measured, not assumed.",
-            "Trained between roughly 70% and 95% SoH. It has never seen a "
-            "brand-new cell or one below end-of-life.",
-            "It reads a charge, not a pack. A module of cells in series is a "
-            "different measurement, and its weakest cell is what matters.",
-            "Not a safety system. It estimates capacity, and says nothing "
-            "about internal shorts, swelling or thermal runaway risk.",
-            "Three of the seven features are correlated above 0.9, so the "
-            "per-feature breakdown divides credit between them in a way that "
-            "is not identified. The total is sound; a single bar is not a "
-            "physical claim on its own.",
+            f"It learned from {len(mdl.trained_on.get('cells', []))} battery cells "
+            f"in one lab experiment, all at room temperature. A different battery "
+            f"type, or a hot or cold day, is outside what it has seen.",
+
+            f"It learned from batteries between "
+            f"{mdl.trained_on.get('soh_range_pct', [0, 0])[0]:.0f}% and "
+            f"{mdl.trained_on.get('soh_range_pct', [0, 0])[1]:.0f}% health. It has "
+            f"never seen a brand new battery or a very worn one, and it tells you "
+            f"when an answer falls outside that range.",
+
+            "It reads one cell, not a whole pack. A pack is many cells wired "
+            "together, and the weakest cell decides how the pack behaves.",
+
+            "This is not a safety check. It estimates how much charge a battery "
+            "still holds. It says nothing about fire risk, swelling, or damage "
+            "inside the cell.",
+
+            f"Typical error is {mdl.honest_performance.get('mae_pct', 0):.1f} "
+            f"points, but the worst miss on a battery it had never seen was "
+            f"{mdl.honest_performance.get('max_abs_err_pct', 0):.1f} points. Use it "
+            f"to rank and screen batteries, not to settle a warranty claim on its own.",
+
+            "Three of the seven measurements move together. The total is reliable, "
+            "but you cannot read a single bar as a fact on its own.",
         ],
     }
 

@@ -99,7 +99,7 @@ def test_coarse_logging_still_works():
 
 def test_part_charged_pack_is_refused():
     """Starting above the window means the window is truncated, not shorter."""
-    with pytest.raises(UnusableCharge, match="part-charged"):
+    with pytest.raises(UnusableCharge, match="already part\\s+charged"):
         extract(**charge_curve(capacity_ah=1.8, start_soc=0.85))
 
 
@@ -115,27 +115,27 @@ def test_charge_that_never_reaches_the_window_is_refused():
 def test_mismatched_channel_lengths_are_refused():
     curve = charge_curve()
     curve["voltage_v"] = curve["voltage_v"][:-3]
-    with pytest.raises(UnusableCharge, match="channel lengths differ"):
+    with pytest.raises(UnusableCharge, match="different lengths"):
         extract(**curve)
 
 
 def test_too_few_samples_is_refused():
     curve = charge_curve()
-    with pytest.raises(UnusableCharge, match="at least 20"):
+    with pytest.raises(UnusableCharge, match="At least 20"):
         extract(**{k: v[:10] for k, v in curve.items()})
 
 
 def test_nan_is_refused():
     curve = charge_curve()
     curve["voltage_v"][50] = float("nan")
-    with pytest.raises(UnusableCharge, match="NaN"):
+    with pytest.raises(UnusableCharge, match="missing or not a number"):
         extract(**curve)
 
 
 def test_unsorted_time_is_refused():
     curve = charge_curve()
     curve["time_s"][10], curve["time_s"][40] = curve["time_s"][40], curve["time_s"][10]
-    with pytest.raises(UnusableCharge, match="increasing order"):
+    with pytest.raises(UnusableCharge, match="go backwards"):
         extract(**curve)
 
 

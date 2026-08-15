@@ -365,3 +365,63 @@ footer p { font-size: 0.78rem; color: var(--text-faint); margin: 0; font-family:
   html { scroll-behavior: auto; }
   * { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
 }
+
+/* ------------------------------ why it matters ---------------------------
+ * The line a non-engineer reads first. Set apart from the lede as a pulled
+ * quote would be, because it answers a different question: not "what is this"
+ * but "what is it worth". */
+.worth {
+  margin-top: 2rem; padding: 1rem 0 0;
+  border-top: var(--rule) solid var(--line-strong);
+  font-size: 0.92rem; color: var(--text-muted); max-width: 66ch;
+}
+.worth strong { color: var(--text); font-weight: 600; }
+
+/* -------------------------------- the tour -------------------------------
+ * A guided walkthrough for presenting this live. Deliberately a fixed strip at
+ * the bottom rather than a spotlight overlay: on a projector a dimmed backdrop
+ * loses the detail in the charts, which is the thing being shown. */
+.tour-btn {
+  font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.04em;
+  background: var(--text); color: var(--bg); border: 0;
+  padding: 0.42rem 0.75rem; border-radius: var(--radius-sm); cursor: pointer;
+  white-space: nowrap;
+}
+.tour-btn:hover { background: var(--accent); }
+
+.tour {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 90;
+  background: var(--surface); border-top: 2px solid var(--accent);
+  box-shadow: 0 -10px 30px -20px rgba(0,0,0,0.5);
+}
+.tour[hidden] { display: none; }
+.tour__box {
+  max-width: var(--container); margin-inline: auto;
+  padding: 0.9rem clamp(1.1rem, 5vw, 2.5rem) 1rem;
+  display: grid; grid-template-columns: auto 1fr auto; gap: 1.2rem; align-items: center;
+}
+.tour__step {
+  font-family: var(--font-mono); font-size: 0.68rem; color: var(--accent);
+  font-variant-numeric: lining-nums tabular-nums; white-space: nowrap;
+}
+.tour__text { margin: 0; font-size: 0.92rem; color: var(--text); line-height: 1.55; }
+.tour__controls { display: flex; gap: 0.4rem; }
+.tour__nav {
+  font-family: var(--font-mono); font-size: 0.7rem;
+  background: transparent; color: var(--text-muted);
+  border: var(--rule) solid var(--line-strong); border-radius: var(--radius-sm);
+  padding: 0.4rem 0.7rem; cursor: pointer; white-space: nowrap;
+}
+.tour__nav:hover { color: var(--text); border-color: var(--text); }
+.tour__nav--go { background: var(--text); color: var(--bg); border-color: var(--text); }
+.tour__nav--go:hover { background: var(--accent); border-color: var(--accent); }
+.tour__nav--quit { border-color: transparent; }
+@media (max-width: 700px) {
+  .tour__box { grid-template-columns: 1fr; gap: 0.6rem; }
+}
+
+/* What the tour is pointing at. A rule and a tint, not a spotlight. */
+.tour-focus {
+  position: relative;
+  box-shadow: -14px 0 0 -11px var(--accent);
+}

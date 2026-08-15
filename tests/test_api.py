@@ -49,7 +49,7 @@ def test_unreadable_charge_is_422_with_a_reason(client):
     assert r.status_code == 422
     detail = r.json()["detail"]
     assert detail["error"] == "unusable_charge"
-    assert "part-charged" in detail["reason"]
+    assert "already part" in detail["reason"]
     assert detail["help"]
 
 

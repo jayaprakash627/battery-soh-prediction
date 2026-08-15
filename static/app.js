@@ -124,7 +124,7 @@ function drawCurve() {
   const X = (v) => box.x0 + ((v - tMin) / (tMax - tMin || 1)) * (box.x1 - box.x0);
 
   axes(ctx, box, {
-    xLabel: "seconds into the charge", yLabel: "each channel scaled to its own range",
+    xLabel: "seconds into the charge", yLabel: "each line has its own scale",
     xMin: 0, xMax: tMax - tMin, yMin: 0, yMax: 1, yTicks: 4, showYValues: false,
   });
 
@@ -138,7 +138,7 @@ function drawCurve() {
     ctx.font = "10px " + css("--font-mono");
     ctx.textAlign = "left";
     ctx.textBaseline = "top";
-    ctx.fillText("3.90 → 4.15 V", X(t[iLow]) + 4, box.y0 + 3);
+    ctx.fillText("the part the model reads", X(t[iLow]) + 4, box.y0 + 3);
   }
 
   const series = [
@@ -178,7 +178,7 @@ function drawLife() {
   const Y = (v) => box.y1 - ((v - yMin) / (yMax - yMin || 1)) * (box.y1 - box.y0);
 
   axes(ctx, box, {
-    xLabel: "  cycle  ", yLabel: "state of health  %",
+    xLabel: "charge number", yLabel: "health  %",
     xMin, xMax, yMin, yMax, yTicks: 5,
   });
 
@@ -217,7 +217,7 @@ function drawLife() {
   ctx.font = "11px " + css("--font-mono");
   ctx.textAlign = "right";
   ctx.textBaseline = "top";
-  ctx.fillText(`${rows.length} cycles · MAE ${fmt(mae)} pts`, box.x1, box.y0 + 2);
+  ctx.fillText(`${rows.length} charges · ${fmt(mae)} pts off on average`, box.x1, box.y0 + 2);
 }
 
 function redrawAll() { drawCurve(); drawLife(); }
@@ -229,12 +229,12 @@ function renderSplits() {
   const models = state.card?.evaluation?.models?.ridge;
   if (!models) return;
   const defs = [
-    { key: "random", name: "Random cycles", tag: "optimistic",
-      why: "Shuffle every cycle and hold out 20%. Neighbouring cycles of the same cell land on both sides of the split." },
-    { key: "by_cell", name: "Leave one cell out", tag: "honest · shipped on this", honest: true,
-      why: "Train on every cell but one, predict that one, rotate. The held-out cell's whole trajectory is unseen. This is the deployment condition." },
-    { key: "forward_time", name: "Early life → late life", tag: "extrapolation",
-      why: "Train on the first 60% of every cell's life, test on the last 40%. Asks whether it extrapolates into damage it has never seen." },
+    { key: "random", name: "Shuffle the charges", tag: "flattering",
+      why: "Mix all the charges up and hide 20%. The hidden ones sit right next to charges the model trained on, so it can copy its neighbour." },
+    { key: "by_cell", name: "Hide a whole battery", tag: "the real test · chosen on this", honest: true,
+      why: "Train on every battery but one, then predict that one. Repeat for each. This is what happens when you meet a new battery." },
+    { key: "forward_time", name: "Young to old", tag: "hardest",
+      why: "Train on the first 60% of each battery's life and test on the last 40%. Asks whether it copes with damage it has never seen." },
   ];
   const worst = Math.max(...defs.map((d) => models[d.key].mae_pct));
   $("#splits").innerHTML = defs.map((d) => {
@@ -242,8 +242,8 @@ function renderSplits() {
     return `<div class="split ${d.honest ? "split--honest" : ""}">
       <span class="split__tag">${d.tag}</span>
       <p class="split__name">${d.name}</p>
-      <div><span class="split__mae">${fmt(m.mae_pct)}</span><span class="split__unit">pts MAE</span></div>
-      <div class="split__r2">R² ${fmt(m.r2, 3)} · worst miss ${fmt(m.max_abs_err_pct)} pts</div>
+      <div><span class="split__mae">${fmt(m.mae_pct)}</span><span class="split__unit">points off, on average</span></div>
+      <div class="split__r2">worst miss ${fmt(m.max_abs_err_pct)} pts</div>
       <div class="split__bar"><span style="width:${(m.mae_pct / worst) * 100}%"></span></div>
       <p class="split__why">${d.why}</p>
     </div>`;
@@ -269,8 +269,7 @@ function renderPicker() {
   }
   items.sort((a, b) => a.cell_id.localeCompare(b.cell_id) || a.cycle_number - b.cycle_number);
   $("#picker").innerHTML = items.map((r, i) =>
-    `<button class="pick" data-i="${i}">${r.cell_id} · cycle ${r.cycle_number}
-     · ${fmt(r.measured_soh_pct, 0)}%</button>`).join("");
+    `<button class="pick" data-i="${i}">${r.cell_id} · charge ${r.cycle_number} · ${fmt(r.measured_soh_pct, 0)}%</button>`).join("");
   $("#picker").querySelectorAll(".pick").forEach((btn) => {
     btn.addEventListener("click", () => select(items[+btn.dataset.i], btn));
   });
@@ -281,7 +280,7 @@ async function select(row, btn) {
   state.selected = row;
   document.querySelectorAll(".pick").forEach((b) => b.classList.toggle("is-on", b === btn));
   $("#curve-note").textContent =
-    `${row.samples} samples · ambient ${fmt(row.ambient_c, 0)}°C`;
+    `${row.samples} readings · room ${fmt(row.ambient_c, 0)}°C`;
   drawCurve();
   await predict(row);
 }
@@ -303,7 +302,7 @@ async function predict(row) {
   if (!res.ok) {
     const reason = body?.detail?.reason || "unknown";
     $("#result").innerHTML =
-      `<p class="muted">The model declined to read this charge.</p>
+      `<p class="muted">The model refused to answer for this charge.</p>
        <div class="note">${reason}</div>`;
     $("#contributions").innerHTML = `<p class="muted">—</p>`;
     return;
@@ -316,14 +315,14 @@ async function predict(row) {
 
   $("#result").innerHTML = `
     <div class="soh"><span class="soh__v">${fmt(p.soh_pct, 1)}</span><span class="soh__pc">% SoH</span></div>
-    <div class="soh__band">90% interval ${fmt(p.interval_low_pct, 1)} – ${fmt(p.interval_high_pct, 1)}%</div>
+    <div class="soh__band">9 times out of 10 the true value lands between ${fmt(p.interval_low_pct, 1)}% and ${fmt(p.interval_high_pct, 1)}%</div>
     <span class="verdict ${p.end_of_life ? "verdict--eol" : "verdict--ok"}">
-      ${p.end_of_life ? "below 80% — end of vehicle life" : "serviceable"}</span>
+      ${p.end_of_life ? "below 80% — treat as worn out" : "still good to use"}</span>
     <div class="truth">
-      Ground truth from the full discharge that followed: <b>${fmt(truth, 1)}%</b><br>
-      Off by <b>${miss >= 0 ? "+" : ""}${fmt(miss, 1)} points</b>
+      What the full drain test measured afterwards: <b>${fmt(truth, 1)}%</b><br>
+      The model was <b>${miss >= 0 ? "+" : ""}${fmt(miss, 1)} points</b> out
       ${Math.abs(miss) <= p.interval_high_pct - p.soh_pct
-        ? "— inside the interval." : "— outside the interval."}
+        ? "— inside the range it promised." : "— outside the range it promised."}
     </div>
     ${p.notes.map((n) => `<div class="note">${n}</div>`).join("")}`;
 
@@ -352,9 +351,9 @@ function renderContributions(p, features) {
       <p class="contrib__why">${byName[c.feature]?.physics || c.physics || ""}</p>
     </div>`;
   }).join("")
-    + `<p class="muted">Baseline for an average cell: ${fmt(p.baseline_pct, 1)}%.
-       These contributions add to it exactly — the model is linear, so this is
-       an accounting of the answer, not an approximation of it.</p>`
+    + `<p class="muted">An average battery starts at ${fmt(p.baseline_pct, 1)}%.
+       Add every bar above to that and you get the answer exactly — this is the
+       arithmetic itself, not a rough guide to it.</p>`
     // The caveat rides with every prediction rather than appearing only when
     // something looks off, because it is true of every prediction.
     + (p.contribution_caveat ? `<div class="note">${p.contribution_caveat}</div>` : "");
@@ -380,7 +379,7 @@ function renderLifeSwitch() {
       state.lifeCell = b.dataset.cell;
       $("#cellswitch").querySelectorAll(".pick")
         .forEach((x) => x.classList.toggle("is-on", x === b));
-      $("#life-title").textContent = `Cell ${state.lifeCell}`;
+      $("#life-title").textContent = `Battery ${state.lifeCell}`;
       drawLife();
     });
   });
@@ -412,3 +411,89 @@ function renderLifeSwitch() {
   renderPicker();
   renderLifeSwitch();
 })();
+
+/* ---- guided walkthrough --------------------------------------------------
+ * Built for showing this to a room. One button steps through the page in
+ * order, scrolling to each part and putting a plain sentence under it, so the
+ * story does not depend on the presenter remembering what to click next.
+ *
+ * It drives the real page rather than a slideshow: step 3 actually picks a
+ * worn battery and runs it through the live model. Arrow keys and Escape work,
+ * because clicking a small button while talking is awkward.
+ */
+const TOUR = [
+  {
+    at: ".hero",
+    say: "The problem: to know what a battery really holds, you normally drain it flat and count. That is about four hours with the bike off the road. This reads a charge you were doing anyway.",
+  },
+  {
+    at: "#finding",
+    say: "The same model scored three ways. Shuffling the charges flatters it, because the hidden charges sit next to ones it trained on. Hiding a whole battery is the real test — that is the middle number, and it is the one quoted everywhere here.",
+  },
+  {
+    at: "#try",
+    say: "Here is a real charge from the lab. The shaded strip is the only part the model reads — a few minutes, not the whole thing.",
+    run: () => {
+      // A worn battery, so the number on screen is one worth talking about.
+      const buttons = [...document.querySelectorAll("#picker .pick")];
+      const worn = buttons.find((b) => /· 6\d%/.test(b.textContent)) || buttons[0];
+      worn?.click();
+    },
+  },
+  {
+    at: "#contributions",
+    say: "And it shows its working. Each bar is how far one measurement pushed the answer. Add them to the starting point and you get the result exactly — nothing is hidden in a black box.",
+  },
+  {
+    at: "#life",
+    say: "One battery's whole life. The line is what draining it actually measured; the dots are what the charge alone predicted. The model had never seen this battery. Watch where it crosses 80%, the line where a battery is usually retired.",
+  },
+  {
+    at: "#card",
+    say: "And where it stops. Typical error is 1.6 points but the worst miss was 9.3, so this ranks and screens batteries — it does not settle a warranty claim. Say that before someone else asks it.",
+  },
+];
+
+let tourAt = -1;
+
+function tourShow(index) {
+  if (index < 0 || index >= TOUR.length) return tourEnd();
+  document.querySelectorAll(".tour-focus").forEach((el) => el.classList.remove("tour-focus"));
+
+  tourAt = index;
+  const stop = TOUR[index];
+  const target = document.querySelector(stop.at);
+
+  $("#tour").hidden = false;
+  $("#tour-step").textContent = `${index + 1} / ${TOUR.length}`;
+  $("#tour-text").textContent = stop.say;
+  $("#tour-prev").disabled = index === 0;
+  $("#tour-next").textContent = index === TOUR.length - 1 ? "Done" : "Next";
+
+  if (stop.run) stop.run();
+  if (target) {
+    target.classList.add("tour-focus");
+    // Leave room for the strip at the bottom so the section is not hidden
+    // behind the thing describing it.
+    const y = target.getBoundingClientRect().top + window.scrollY - 90;
+    window.scrollTo({ top: Math.max(0, y), behavior: "smooth" });
+  }
+}
+
+function tourEnd() {
+  tourAt = -1;
+  $("#tour").hidden = true;
+  document.querySelectorAll(".tour-focus").forEach((el) => el.classList.remove("tour-focus"));
+}
+
+$("#tour-start").addEventListener("click", () => tourShow(0));
+$("#tour-next").addEventListener("click", () => tourShow(tourAt + 1));
+$("#tour-prev").addEventListener("click", () => tourShow(tourAt - 1));
+$("#tour-end").addEventListener("click", tourEnd);
+
+addEventListener("keydown", (e) => {
+  if (tourAt < 0) return;
+  if (e.key === "ArrowRight" || e.key === " ") { e.preventDefault(); tourShow(tourAt + 1); }
+  if (e.key === "ArrowLeft") { e.preventDefault(); tourShow(tourAt - 1); }
+  if (e.key === "Escape") tourEnd();
+});

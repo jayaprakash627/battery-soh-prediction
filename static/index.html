@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Battery State-of-Health Prediction</title>
-<meta name="description" content="Estimating remaining battery capacity from a single ordinary charge — trained on NASA cell-ageing data and scored on cells it never saw.">
+<meta name="description" content="Works out how much life is left in a battery from one normal charge. Trained on NASA battery data and tested on batteries it had never seen.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
      running the previous style.css/app.js after a deploy — it holds the old file
      while the network log cheerfully reports 200. Bump this string whenever
      either file changes. -->
-<link rel="stylesheet" href="/static/style.css?v=4">
+<link rel="stylesheet" href="/static/style.css?v=6">
 </head>
 <body>
 
@@ -26,7 +26,8 @@
       <a href="#card">Model card</a>
       <a href="/docs">API</a>
     </nav>
-    <button id="theme-toggle" class="ghost-btn" aria-label="Toggle colour theme">◐</button>
+    <button id="tour-start" class="tour-btn">Walk me through it</button>
+    <button id="theme-toggle" class="ghost-btn" aria-label="Switch between light and dark">◐</button>
   </div>
 </header>
 
@@ -34,48 +35,56 @@
 
 <!-- ============================== HERO ================================== -->
 <section class="hero wrap">
-  <p class="eyebrow">NASA cell-ageing data · leave-one-cell-out</p>
-  <h1>How much battery is left,<br>without discharging it?</h1>
+  <p class="eyebrow">NASA battery data · tested on batteries it never saw</p>
+  <h1>How much battery is left,<br>without draining it?</h1>
   <p class="lede">
-    Measuring a pack's true capacity means running it flat — hours off the road.
-    But every pack gets <em>charged</em>, and a charger already measures voltage,
-    current and temperature. This model reads a few minutes of an ordinary
-    charge and estimates what capacity remains, knowing nothing about the pack's
-    history.
+    To measure what a battery really holds, you have to run it flat and count.
+    That takes hours, and the bike is off the road the whole time. But every
+    battery gets <em>charged</em>, and a charger already measures voltage,
+    current and temperature. This reads a few minutes of a normal charge and
+    works out how much life is left — knowing nothing about the battery's past.
   </p>
 
   <div class="stat-row" id="hero-stats">
-    <div class="stat"><span class="stat__v" data-stat="mae">—</span><span class="stat__l">mean error, unseen cells</span></div>
-    <div class="stat"><span class="stat__v" data-stat="cells">—</span><span class="stat__l">cells</span></div>
-    <div class="stat"><span class="stat__v" data-stat="cycles">—</span><span class="stat__l">measured cycles</span></div>
-    <div class="stat"><span class="stat__v" data-stat="features">—</span><span class="stat__l">features, all from one charge</span></div>
+    <div class="stat"><span class="stat__v" data-stat="mae">—</span><span class="stat__l">typical error, on batteries it never saw</span></div>
+    <div class="stat"><span class="stat__v" data-stat="cells">—</span><span class="stat__l">batteries</span></div>
+    <div class="stat"><span class="stat__v" data-stat="cycles">—</span><span class="stat__l">charges measured</span></div>
+    <div class="stat"><span class="stat__v" data-stat="features">—</span><span class="stat__l">measurements, all from one charge</span></div>
   </div>
+
+  <p class="worth">
+    <strong>Why it matters.</strong> The normal way to check a battery is a full
+    drain-and-refill test: about 4 hours per battery, and the bike earns nothing
+    while it sits there. This uses a charge that was going to happen anyway. For
+    a 150-bike fleet that is roughly 600 hours of downtime a year that you get
+    back.
+  </p>
 </section>
 
 <!-- ============================ THE FINDING ============================= -->
 <section id="finding" class="wrap section">
-  <h2>The number depends on how you split the data</h2>
+  <h2>The score depends on how you test it</h2>
   <p class="section__sub">
-    Same model, same features, same cells — three ways of deciding what counts
-    as "unseen". The gap between them is the whole story, and it is why most
-    reported accuracy on this dataset means less than it looks like.
+    Same model, same batteries. The only thing that changes is which data is
+    hidden from it during testing. The gap between these three numbers is the
+    real finding here.
   </p>
 
   <div class="splits" id="splits"></div>
 
   <div class="callout" id="gap-callout">
-    <h3>Why the first number is a mirage</h3>
+    <h3>Why the first number is misleading</h3>
     <p>
-      Shuffling cycles puts cycle 100 in training and cycle 101 in test. They are
-      nearly the same measurement of the same cell an hour apart, so the model
-      can score well by interpolating between neighbours it has already seen. It
-      answers <em>"can you fill a gap in an experiment you already watched"</em> —
-      a question no fleet operator has ever asked.
+      Shuffling means charge number 100 is used for training and charge 101 for
+      testing. Those two are the same battery an hour apart — almost the same
+      reading. The model scores well by copying a neighbour it has already seen.
+      That answers <em>"can you fill a gap in a test you already watched"</em>,
+      which nobody needs.
     </p>
     <p>
-      Holding out a whole cell asks the real one: here is a pack you have never
-      met. The honest number is the one this project reports, and the one the
-      shipped model was chosen on.
+      Hiding a whole battery asks the real question: here is one you have never
+      met, how healthy is it? That is the number reported everywhere on this
+      page, and the number the model was chosen on.
     </p>
   </div>
 </section>
@@ -84,10 +93,10 @@
 <section id="try" class="wrap section">
   <h2>Read a real charge</h2>
   <p class="section__sub">
-    These are measured curves from the dataset, not simulations. Pick one and
-    the model will estimate its state of health from the charge alone — then you
-    can compare against the full discharge that actually followed it, which the
-    model never sees.
+    These are real charges recorded in the lab, not made-up ones. Pick one and
+    the model works out the battery's health from the charge alone. Then you can
+    check it against the full drain test that came afterwards — which the model
+    never gets to see.
   </p>
 
   <div class="picker" id="picker"></div>
@@ -95,7 +104,7 @@
   <div class="try-grid">
     <div class="panel">
       <div class="panel__head">
-        <h3>The charge, as logged</h3>
+        <h3>The charge, as the charger recorded it</h3>
         <span class="panel__note" id="curve-note">—</span>
       </div>
       <canvas id="curve-chart" data-h="300"></canvas>
@@ -103,7 +112,7 @@
         <span class="key key--teal"></span>voltage
         <span class="key key--blue"></span>current
         <span class="key key--violet"></span>temperature
-        <span class="key key--band"></span>the 3.90–4.15 V window the model reads
+        <span class="key key--band"></span>the part the model reads
       </p>
     </div>
 
@@ -118,7 +127,7 @@
   <div class="panel panel--wide">
     <div class="panel__head">
       <h3>Why it said that</h3>
-      <span class="panel__note">Each bar is that measurement's share of the answer, in points of SoH, against an average cell.</span>
+      <span class="panel__note">Each bar is how far that one measurement pushed the answer up or down, compared to an average battery.</span>
     </div>
     <div id="contributions" class="contribs"><p class="muted">—</p></div>
   </div>
@@ -126,11 +135,11 @@
 
 <!-- ============================ OVER A LIFE ============================= -->
 <section id="life" class="wrap section">
-  <h2>Across a whole cell's life</h2>
+  <h2>Across one battery's whole life</h2>
   <p class="section__sub">
-    Every point below was predicted by a model trained without that cell. Solid
-    line is what the full discharge actually measured; dots are what the charge
-    curve alone predicted.
+    Every dot below was predicted by a model that had never seen this battery.
+    The line is what the full drain test actually measured. The dots are what
+    the charge alone predicted.
   </p>
   <div class="panel panel--wide">
     <div class="panel__head">
@@ -139,33 +148,33 @@
     </div>
     <canvas id="life-chart" data-h="340"></canvas>
     <p class="legend">
-      <span class="key key--teal"></span>measured (full discharge)
-      <span class="key key--dot"></span>predicted (charge only)
-      <span class="key key--eol"></span>80% end-of-life threshold
+      <span class="key key--teal"></span>measured by draining it
+      <span class="key key--dot"></span>predicted from the charge
+      <span class="key key--eol"></span>80% — usually counted as worn out
     </p>
   </div>
 </section>
 
 <!-- ============================ MODEL CARD ============================== -->
 <section id="card" class="wrap section">
-  <h2>Model card</h2>
+  <h2>What it uses, and where it stops</h2>
   <p class="section__sub">
-    What it is, what it was measured at, and — the part that matters — what it
-    must not be used for.
+    What the model reads, and — the part that matters more — what it should not
+    be used for.
   </p>
   <div class="card-grid">
     <div class="panel">
-      <div class="panel__head"><h3>The features</h3></div>
+      <div class="panel__head"><h3>The seven measurements</h3></div>
       <div id="feature-list" class="features"><p class="muted">—</p></div>
     </div>
     <div class="panel">
-      <div class="panel__head"><h3>Limits</h3></div>
+      <div class="panel__head"><h3>Where it stops</h3></div>
       <ul id="limits" class="limits"><li class="muted">—</li></ul>
-      <div class="panel__head" style="margin-top:1.6rem"><h3>Not in the model, on purpose</h3></div>
+      <div class="panel__head" style="margin-top:1.6rem"><h3>Left out on purpose</h3></div>
       <ul class="limits">
-        <li><b>Cycle number.</b> The strongest predictor in the dataset and useless in the field — it leaks the answer, and a second-hand pack does not arrive with its cycle count written on it.</li>
-        <li><b>Previous capacity.</b> Same problem, worse: capacity is what is being predicted.</li>
-        <li><b>Cell identity.</b> Eight cells is not enough to learn per-cell offsets that generalise. It is exactly enough to memorise them.</li>
+        <li><b>How many times it has been charged.</b> This is the strongest clue in the lab and useless in real life. Health drops as the count rises, so the model would just be reading the lab's schedule. A second-hand battery does not arrive with its count written on it.</li>
+        <li><b>How much it held last time.</b> Same problem, worse — that is the very thing we are trying to work out.</li>
+        <li><b>Which battery it is.</b> Eight batteries is not enough to learn a per-battery adjustment that would carry over. It is exactly enough to memorise these eight.</li>
       </ul>
     </div>
   </div>
@@ -173,13 +182,29 @@
 
 <footer class="wrap">
   <p>
-    Data: NASA Ames Prognostics Center of Excellence battery ageing dataset.
+    Data: NASA Ames battery ageing dataset.
     Built by <a href="https://jayaprakash627.github.io">Jayaprakash M</a> ·
     <a href="https://github.com/jayaprakash627/battery-soh-prediction">source</a>
   </p>
 </footer>
 
 </main>
-<script src="/static/app.js?v=4"></script>
+
+<!-- Guided walkthrough. Built for presenting this live: one button steps
+     through the page in order with a plain-English line for each stop, so the
+     story does not depend on remembering what to click. -->
+<div id="tour" class="tour" hidden>
+  <div class="tour__box">
+    <span class="tour__step" id="tour-step">1 / 6</span>
+    <p class="tour__text" id="tour-text"></p>
+    <div class="tour__controls">
+      <button id="tour-prev" class="tour__nav">Back</button>
+      <button id="tour-next" class="tour__nav tour__nav--go">Next</button>
+      <button id="tour-end" class="tour__nav tour__nav--quit">Close</button>
+    </div>
+  </div>
+</div>
+
+<script src="/static/app.js?v=6"></script>
 </body>
 </html>
