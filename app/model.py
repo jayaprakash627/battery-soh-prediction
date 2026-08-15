@@ -87,6 +87,7 @@ class Model:
         self.trained_on = artifact.get("trained_on", {})
         self.honest_performance = artifact.get("honest_performance", {})
         self.collinearity = artifact.get("collinearity", {})
+        self.feature_ranges = artifact.get("feature_ranges", {})
 
     def predict(self, features: dict[str, float], confidence: float = 0.90) -> Prediction:
         x = to_vector(features)

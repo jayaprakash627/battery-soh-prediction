@@ -19,7 +19,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field, field_validator
 
 from app import model as model_module
-from app.features import FEATURES, UnusableCharge, extract
+from app.features import FEATURES, FEATURE_NAMES, UnusableCharge, extract
 
 ROOT = Path(__file__).resolve().parent.parent
 STATIC = ROOT / "static"
@@ -105,6 +105,50 @@ def predict(curve: ChargeCurve) -> dict:
     return {"features": features, "prediction": _prediction_payload(pred)}
 
 
+class FeatureSet(BaseModel):
+    """The seven measurements, supplied directly instead of as a curve."""
+
+    features: dict[str, float]
+    confidence: float = 0.90
+
+
+@app.post("/api/predict/features")
+def predict_from_features(payload: FeatureSet) -> dict:
+    """Predict from measurements that have already been extracted.
+
+    Exists for two callers. A system that already computes these numbers on the
+    charger can skip sending a whole curve. And the "what if" sliders in the UI
+    need to ask "if this one measurement were different, what would you say?" —
+    which has no curve behind it at all.
+
+    Note what this deliberately does NOT do: reimplement the model in
+    JavaScript so the sliders feel faster. There would then be two models, they
+    would drift, and the page would confidently disagree with the API.
+    """
+    unknown = set(payload.features) - set(FEATURE_NAMES)
+    if unknown:
+        raise HTTPException(status_code=422, detail={
+            "error": "unknown_features", "unknown": sorted(unknown),
+            "expected": list(FEATURE_NAMES)})
+    missing = set(FEATURE_NAMES) - set(payload.features)
+    if missing:
+        raise HTTPException(status_code=422, detail={
+            "error": "missing_features", "missing": sorted(missing)})
+
+    try:
+        mdl = model_module.load()
+    except FileNotFoundError as exc:
+        raise HTTPException(status_code=503, detail={
+            "error": "model_not_built", "reason": str(exc)})
+
+    try:
+        pred = mdl.predict(dict(payload.features), confidence=payload.confidence)
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail={"error": "bad_request",
+                                                     "reason": str(exc)})
+    return {"features": payload.features, "prediction": _prediction_payload(pred)}
+
+
 @app.get("/api/model")
 def model_card() -> dict:
     """What this model is, what it was measured at, and what it must not be used for."""
@@ -129,7 +173,8 @@ def model_card() -> dict:
         "features": [
             {"name": f.name, "unit": f.unit, "physics": f.physics,
              "direction": f.direction,
-             "coefficient": mdl.coef[i]}
+             "coefficient": mdl.coef[i],
+             "range": mdl.feature_ranges.get(f.name)}
             for i, f in enumerate(FEATURES)
         ],
         "evaluation": {k: evaluation.get(k) for k in

@@ -26,7 +26,7 @@ from app.features import UnusableCharge, extract
 # would make the artifact several megabytes; the features are computed from
 # interpolated crossings and a 60-point voltage grid, so this loses nothing the
 # model reads. `verify` below proves that rather than asserting it.
-DEMO_SAMPLES = 400
+DEMO_SAMPLES = 220
 
 # The most a decimated curve's headline feature may move. If decimation shifted
 # it by more than this, the demo would be showing the model a different charge
@@ -44,7 +44,7 @@ def _decimate(arrays: dict[str, np.ndarray], n: int) -> dict[str, list[float]]:
     return {k: [round(float(x), 5) for x in v[idx]] for k, v in arrays.items()}
 
 
-def build(processed: Path, artifacts: Path, per_cell: int = 3) -> dict:
+def build(processed: Path, artifacts: Path, per_cell: int = 9) -> dict:
     bundle = np.load(processed / "cycles.npz", allow_pickle=True)
     pairs = list(bundle["pairs"])
     rated = float(bundle["rated_capacity_ah"])
@@ -71,8 +71,16 @@ def build(processed: Path, artifacts: Path, per_cell: int = 3) -> dict:
         if not usable:
             continue
 
+        # Spread evenly across the cell's measured health, worst to best, so the
+        # UI can scrub through a battery's whole life and watch the curve change
+        # shape. Picking at random would cluster in the middle, where every
+        # battery looks the same and there is nothing to see.
         usable.sort(key=lambda t: t[0]["discharge"]["capacity_ah"])
-        picks = [usable[0], usable[len(usable) // 2], usable[-1]][:per_cell]
+        if per_cell >= len(usable):
+            picks = usable
+        else:
+            step = (len(usable) - 1) / (per_cell - 1)
+            picks = [usable[round(i * step)] for i in range(per_cell)]
 
         rows = []
         for pair, full_features in picks:
@@ -144,8 +152,9 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--processed", type=Path, default=Path("data/processed"))
     ap.add_argument("--artifacts", type=Path, default=Path("artifacts"))
+    ap.add_argument("--per-cell", type=int, default=9)
     args = ap.parse_args()
-    build(args.processed, args.artifacts)
+    build(args.processed, args.artifacts, args.per_cell)
 
 
 if __name__ == "__main__":

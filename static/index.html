@@ -8,145 +8,224 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<!-- The ?v= is a cache buster. Without it a browser that has visited before keeps
-     running the previous style.css/app.js after a deploy — it holds the old file
-     while the network log cheerfully reports 200. Bump this string whenever
-     either file changes. -->
-<link rel="stylesheet" href="/static/style.css?v=6">
+<!-- The ?v= is a cache buster. Without it a returning browser keeps running the
+     previous style.css/app.js after a deploy, while the network log reports 200.
+     Bump it whenever either file changes. -->
+<link rel="stylesheet" href="/static/style.css?v=8">
 </head>
 <body>
 
 <header class="topbar">
   <div class="wrap topbar__inner">
     <span class="topbar__mark">State of Health<span class="topbar__dot">.</span></span>
-    <nav class="topbar__nav">
-      <a href="#finding">Finding</a>
-      <a href="#try">Try it</a>
-      <a href="#life">Over a life</a>
-      <a href="#card">Model card</a>
-      <a href="/docs">API</a>
-    </nav>
+    <span class="topbar__sub">Reading a battery's age from a single charge</span>
     <button id="tour-start" class="tour-btn">Walk me through it</button>
     <button id="theme-toggle" class="ghost-btn" aria-label="Switch between light and dark">◐</button>
   </div>
 </header>
 
+<!-- Progress rail. Always visible, so you always know where you are in the
+     argument and what is still to come. Doubles as navigation. -->
+<nav class="rail" aria-label="Sections">
+  <div class="wrap rail__inner" id="rail"></div>
+</nav>
+
 <main>
 
-<!-- ============================== HERO ================================== -->
-<section class="hero wrap">
-  <p class="eyebrow">NASA battery data · tested on batteries it never saw</p>
-  <h1>How much battery is left,<br>without draining it?</h1>
+<!-- ========================= 1. THE PROBLEM ============================= -->
+<section id="step-problem" class="step wrap" data-title="The problem">
+  <p class="step__kicker">Start here</p>
+  <h1>How do you know how much life is left in a battery?</h1>
   <p class="lede">
-    To measure what a battery really holds, you have to run it flat and count.
-    That takes hours, and the bike is off the road the whole time. But every
-    battery gets <em>charged</em>, and a charger already measures voltage,
-    current and temperature. This reads a few minutes of a normal charge and
-    works out how much life is left — knowing nothing about the battery's past.
+    Batteries fade. A three-year-old battery might hold only three quarters of
+    what it did when new — and nothing on the outside shows it. So how do you
+    check?
   </p>
 
-  <div class="stat-row" id="hero-stats">
-    <div class="stat"><span class="stat__v" data-stat="mae">—</span><span class="stat__l">typical error, on batteries it never saw</span></div>
-    <div class="stat"><span class="stat__v" data-stat="cells">—</span><span class="stat__l">batteries</span></div>
-    <div class="stat"><span class="stat__v" data-stat="cycles">—</span><span class="stat__l">charges measured</span></div>
-    <div class="stat"><span class="stat__v" data-stat="features">—</span><span class="stat__l">measurements, all from one charge</span></div>
+  <div class="compare">
+    <div class="compare__side compare__side--old">
+      <span class="compare__tag">The usual way</span>
+      <h3>Run it flat and count</h3>
+      <p>
+        Fully charge the battery, then drain it at a steady rate and measure
+        what comes out. It is exact, and it is the reason nobody does it often.
+      </p>
+      <div class="compare__cost">
+        <span class="compare__num">~4 hrs</span>
+        <span class="compare__unit">per battery, bike off the road</span>
+      </div>
+    </div>
+    <div class="compare__arrow" aria-hidden="true">→</div>
+    <div class="compare__side compare__side--new">
+      <span class="compare__tag">This project</span>
+      <h3>Read a charge you were doing anyway</h3>
+      <p>
+        Every battery gets charged. A charger already measures
+        <abbr data-def="How hard the electricity is pushing. Like water pressure in a pipe.">voltage</abbr>,
+        <abbr data-def="How much electricity is flowing. Like the rate water flows through a pipe.">current</abbr>
+        and temperature. It turns out that is enough.
+      </p>
+      <div class="compare__cost">
+        <span class="compare__num">0 hrs</span>
+        <span class="compare__unit">extra — the charge was happening regardless</span>
+      </div>
+    </div>
   </div>
 
-  <p class="worth">
-    <strong>Why it matters.</strong> The normal way to check a battery is a full
-    drain-and-refill test: about 4 hours per battery, and the bike earns nothing
-    while it sits there. This uses a charge that was going to happen anyway. For
-    a 150-bike fleet that is roughly 600 hours of downtime a year that you get
-    back.
-  </p>
+  <p class="step__next">So: can a charge really tell you that? <span>Keep going ↓</span></p>
 </section>
 
-<!-- ============================ THE FINDING ============================= -->
-<section id="finding" class="wrap section">
-  <h2>The score depends on how you test it</h2>
-  <p class="section__sub">
-    Same model, same batteries. The only thing that changes is which data is
-    hidden from it during testing. The gap between these three numbers is the
-    real finding here.
+<!-- ========================= 2. THE IDEA ================================ -->
+<section id="step-idea" class="step wrap" data-title="The idea">
+  <p class="step__kicker">Step 1 of 4</p>
+  <h2>What a charge looks like</h2>
+  <p class="lede">
+    This is one real charge, recorded in a lab. Three things were measured every
+    few seconds. <strong>Move your mouse across the chart</strong> to read the
+    values at any moment.
+  </p>
+
+  <div class="panel panel--chart">
+    <div class="panel__head">
+      <h3>One charge, start to finish</h3>
+      <span class="panel__note" id="idea-note">—</span>
+    </div>
+    <canvas id="idea-chart" data-h="300"></canvas>
+    <div class="readout" id="idea-readout">
+      <span class="readout__hint">Hover the chart to read it</span>
+    </div>
+    <p class="legend">
+      <span class="key key--teal"></span>voltage
+      <span class="key key--blue"></span>current
+      <span class="key key--violet"></span>temperature
+      <span class="key key--band"></span>the part the model reads
+    </p>
+  </div>
+
+  <div class="explainer">
+    <div class="explainer__item">
+      <span class="explainer__n">1</span>
+      <p><strong>Voltage climbs</strong> as the battery fills, like a tank filling up.</p>
+    </div>
+    <div class="explainer__item">
+      <span class="explainer__n">2</span>
+      <p><strong>Current stays flat, then drops.</strong> The charger pushes hard until the battery is nearly full, then eases off.</p>
+    </div>
+    <div class="explainer__item">
+      <span class="explainer__n">3</span>
+      <p><strong>The shaded strip is all we use.</strong> A few minutes in the middle — not the whole charge.</p>
+    </div>
+  </div>
+
+  <p class="step__next">Now watch what happens as a battery gets old. <span>Keep going ↓</span></p>
+</section>
+
+<!-- ========================= 3. WATCH IT AGE ============================ -->
+<section id="step-age" class="step wrap" data-title="Watch it age">
+  <p class="step__kicker">Step 2 of 4</p>
+  <h2>Drag the slider. Watch the battery age.</h2>
+  <p class="lede">
+    Every position on this slider is a <strong>real charge</strong> from the same
+    battery, from its first weeks to its last. The chart is the real recording.
+    The number on the right is what the model works out from that charge alone —
+    and underneath it, what draining the battery actually measured afterwards.
+  </p>
+
+  <div class="scrub">
+    <div class="scrub__head">
+      <label class="scrub__label" for="cell-pick">Battery</label>
+      <select id="cell-pick" class="scrub__select"></select>
+      <span class="scrub__pos" id="scrub-pos">—</span>
+    </div>
+    <input type="range" id="age-slider" class="scrub__range" min="0" max="8" value="8" step="1"
+           aria-label="Position in this battery's life">
+    <div class="scrub__ends">
+      <span>◀ newest charge</span><span>oldest charge ▶</span>
+    </div>
+  </div>
+
+  <div class="age-grid">
+    <div class="panel panel--chart">
+      <div class="panel__head">
+        <h3>The charge at this point in its life</h3>
+        <span class="panel__note" id="age-note">—</span>
+      </div>
+      <canvas id="age-chart" data-h="280"></canvas>
+      <p class="hint" id="age-hint">
+        The faint line behind is the same battery when it was new. Watch the gap open up.
+      </p>
+    </div>
+
+    <div class="panel panel--verdict">
+      <div class="panel__head"><h3>What the model says</h3></div>
+      <div id="age-result"><p class="muted">Loading…</p></div>
+    </div>
+  </div>
+
+  <p class="step__next">It got that from seven numbers. Here they are. <span>Keep going ↓</span></p>
+</section>
+
+<!-- ========================= 4. WHY ==================================== -->
+<section id="step-why" class="step wrap" data-title="Why it said that">
+  <p class="step__kicker">Step 3 of 4</p>
+  <h2>Nothing is hidden. Here is the whole calculation.</h2>
+  <p class="lede">
+    The model is simple on purpose. It starts from an average battery, then adds
+    or subtracts for each of seven measurements. Add them all up and you get the
+    answer exactly. <strong>Drag any slider</strong> to change a measurement and
+    watch the answer move.
+  </p>
+
+  <div class="why-grid">
+    <div class="panel">
+      <div class="panel__head">
+        <h3>The seven measurements</h3>
+        <button id="why-reset" class="mini-btn" hidden>Reset to the real charge</button>
+      </div>
+      <div id="why-rows" class="whyrows"><p class="muted">—</p></div>
+    </div>
+
+    <div class="panel panel--sticky">
+      <div class="panel__head"><h3>Running total</h3></div>
+      <div class="tally" id="tally"><p class="muted">—</p></div>
+    </div>
+  </div>
+
+  <p class="step__next">Fine — but does it actually work? <span>Keep going ↓</span></p>
+</section>
+
+<!-- ========================= 5. PROOF ================================== -->
+<section id="step-proof" class="step wrap" data-title="Does it work?">
+  <p class="step__kicker">Step 4 of 4</p>
+  <h2>Tested on batteries it had never seen</h2>
+  <p class="lede">
+    This is the part that decides whether any of it counts. A model can look
+    brilliant and be useless, depending entirely on how you test it.
   </p>
 
   <div class="splits" id="splits"></div>
 
-  <div class="callout" id="gap-callout">
+  <div class="callout">
     <h3>Why the first number is misleading</h3>
     <p>
-      Shuffling means charge number 100 is used for training and charge 101 for
-      testing. Those two are the same battery an hour apart — almost the same
+      Shuffling means charge 100 is used for training and charge 101 for
+      testing. Those two are the same battery an hour apart — nearly the same
       reading. The model scores well by copying a neighbour it has already seen.
-      That answers <em>"can you fill a gap in a test you already watched"</em>,
-      which nobody needs.
     </p>
     <p>
-      Hiding a whole battery asks the real question: here is one you have never
-      met, how healthy is it? That is the number reported everywhere on this
-      page, and the number the model was chosen on.
+      Hiding a <em>whole battery</em> asks the real question: here is one you
+      have never met, how healthy is it? That is the number quoted everywhere on
+      this page.
     </p>
   </div>
-</section>
 
-<!-- ============================== TRY IT =============================== -->
-<section id="try" class="wrap section">
-  <h2>Read a real charge</h2>
-  <p class="section__sub">
-    These are real charges recorded in the lab, not made-up ones. Pick one and
-    the model works out the battery's health from the charge alone. Then you can
-    check it against the full drain test that came afterwards — which the model
-    never gets to see.
-  </p>
-
-  <div class="picker" id="picker"></div>
-
-  <div class="try-grid">
-    <div class="panel">
-      <div class="panel__head">
-        <h3>The charge, as the charger recorded it</h3>
-        <span class="panel__note" id="curve-note">—</span>
-      </div>
-      <canvas id="curve-chart" data-h="300"></canvas>
-      <p class="legend">
-        <span class="key key--teal"></span>voltage
-        <span class="key key--blue"></span>current
-        <span class="key key--violet"></span>temperature
-        <span class="key key--band"></span>the part the model reads
-      </p>
-    </div>
-
-    <div class="panel panel--result">
-      <div class="panel__head"><h3>What the model says</h3></div>
-      <div id="result">
-        <p class="muted">Pick a charge above.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="panel panel--wide">
-    <div class="panel__head">
-      <h3>Why it said that</h3>
-      <span class="panel__note">Each bar is how far that one measurement pushed the answer up or down, compared to an average battery.</span>
-    </div>
-    <div id="contributions" class="contribs"><p class="muted">—</p></div>
-  </div>
-</section>
-
-<!-- ============================ OVER A LIFE ============================= -->
-<section id="life" class="wrap section">
-  <h2>Across one battery's whole life</h2>
-  <p class="section__sub">
-    Every dot below was predicted by a model that had never seen this battery.
-    The line is what the full drain test actually measured. The dots are what
-    the charge alone predicted.
-  </p>
   <div class="panel panel--wide">
     <div class="panel__head">
       <h3 id="life-title">—</h3>
-      <div class="cellswitch" id="cellswitch"></div>
+      <span class="panel__note">Line = measured by draining it. Dots = predicted from the charge alone.</span>
     </div>
-    <canvas id="life-chart" data-h="340"></canvas>
+    <div class="cellswitch" id="cellswitch"></div>
+    <canvas id="life-chart" data-h="320"></canvas>
     <p class="legend">
       <span class="key key--teal"></span>measured by draining it
       <span class="key key--dot"></span>predicted from the charge
@@ -155,26 +234,25 @@
   </div>
 </section>
 
-<!-- ============================ MODEL CARD ============================== -->
-<section id="card" class="wrap section">
-  <h2>What it uses, and where it stops</h2>
-  <p class="section__sub">
-    What the model reads, and — the part that matters more — what it should not
-    be used for.
+<!-- ========================= 6. LIMITS ================================= -->
+<section id="step-limits" class="step wrap" data-title="Where it stops">
+  <p class="step__kicker">Before you trust it</p>
+  <h2>Where this stops working</h2>
+  <p class="lede">
+    Every model has an edge. Saying where it is up front is the difference
+    between a tool and a liability.
   </p>
   <div class="card-grid">
     <div class="panel">
-      <div class="panel__head"><h3>The seven measurements</h3></div>
-      <div id="feature-list" class="features"><p class="muted">—</p></div>
+      <div class="panel__head"><h3>Limits</h3></div>
+      <ul id="limits" class="limits"><li class="muted">—</li></ul>
     </div>
     <div class="panel">
-      <div class="panel__head"><h3>Where it stops</h3></div>
-      <ul id="limits" class="limits"><li class="muted">—</li></ul>
-      <div class="panel__head" style="margin-top:1.6rem"><h3>Left out on purpose</h3></div>
+      <div class="panel__head"><h3>Left out on purpose</h3></div>
       <ul class="limits">
-        <li><b>How many times it has been charged.</b> This is the strongest clue in the lab and useless in real life. Health drops as the count rises, so the model would just be reading the lab's schedule. A second-hand battery does not arrive with its count written on it.</li>
-        <li><b>How much it held last time.</b> Same problem, worse — that is the very thing we are trying to work out.</li>
-        <li><b>Which battery it is.</b> Eight batteries is not enough to learn a per-battery adjustment that would carry over. It is exactly enough to memorise these eight.</li>
+        <li><b>How many times it has been charged.</b> The strongest clue in the lab and useless in real life — the model would just be reading the lab's schedule. A second-hand battery does not arrive with its count written on it.</li>
+        <li><b>How much it held last time.</b> Same problem, worse: that is the very thing we are working out.</li>
+        <li><b>Which battery it is.</b> Eight batteries is not enough to learn a per-battery adjustment that carries over. It is exactly enough to memorise these eight.</li>
       </ul>
     </div>
   </div>
@@ -182,17 +260,16 @@
 
 <footer class="wrap">
   <p>
-    Data: NASA Ames battery ageing dataset.
+    Data: NASA Ames battery ageing dataset · <a href="/docs">API documentation</a><br>
     Built by <a href="https://jayaprakash627.github.io">Jayaprakash M</a> ·
-    <a href="https://github.com/jayaprakash627/battery-soh-prediction">source</a>
+    <a href="https://github.com/jayaprakash627/battery-soh-prediction">source code</a>
   </p>
 </footer>
 
 </main>
 
-<!-- Guided walkthrough. Built for presenting this live: one button steps
-     through the page in order with a plain-English line for each stop, so the
-     story does not depend on remembering what to click. -->
+<div id="tip" class="tip" hidden></div>
+
 <div id="tour" class="tour" hidden>
   <div class="tour__box">
     <span class="tour__step" id="tour-step">1 / 6</span>
@@ -205,6 +282,6 @@
   </div>
 </div>
 
-<script src="/static/app.js?v=6"></script>
+<script src="/static/app.js?v=8"></script>
 </body>
 </html>

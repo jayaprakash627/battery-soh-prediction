@@ -283,6 +283,18 @@ def main() -> None:
         "soh_range_pct": [round(float(y.min()), 2), round(float(y.max()), 2)],
     }
     artifact["honest_performance"] = report["models"]["ridge"]["by_cell"]
+    # The range each measurement actually took across the training data. The UI
+    # uses it to bound its "what if" sliders, so a slider cannot be dragged to a
+    # value no real battery has ever produced. p1/p99 rather than min/max, so one
+    # freak charge does not stretch a slider into mostly-empty space.
+    artifact["feature_ranges"] = {
+        name: {
+            "low": round(float(np.percentile(X[:, i], 1)), 6),
+            "high": round(float(np.percentile(X[:, i], 99)), 6),
+            "typical": round(float(np.median(X[:, i])), 6),
+        }
+        for i, name in enumerate(FEATURE_NAMES)
+    }
     artifact["collinearity"] = {
         "threshold": COLLINEARITY_THRESHOLD,
         "pairs": collinear_pairs(X),

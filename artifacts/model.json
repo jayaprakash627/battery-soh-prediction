@@ -70,6 +70,43 @@
     "n": 898,
     "mae_spread_across_cells_pct": 2.5861
   },
+  "feature_ranges": {
+    "window_charge_ah": {
+      "low": 0.461406,
+      "high": 1.038387,
+      "typical": 0.784942
+    },
+    "ic_peak_height": {
+      "low": 2.771509,
+      "high": 5.923726,
+      "typical": 4.24824
+    },
+    "ic_peak_voltage": {
+      "low": 3.94661,
+      "high": 4.082203,
+      "typical": 4.018644
+    },
+    "voltage_slope_v_per_s": {
+      "low": 9.1e-05,
+      "high": 0.000185,
+      "typical": 0.000119
+    },
+    "cv_phase_seconds": {
+      "low": 4418.54102,
+      "high": 7181.80184,
+      "typical": 5855.9065
+    },
+    "temp_rise_c": {
+      "low": -5.108944,
+      "high": 3.554215,
+      "typical": 1.659433
+    },
+    "temp_max_c": {
+      "low": 24.799331,
+      "high": 37.752191,
+      "typical": 29.830453
+    }
+  },
   "collinearity": {
     "threshold": 0.9,
     "pairs": [
@@ -89,6 +126,6 @@
         "r": -0.953
       }
     ],
-    "caveat": "window_charge_ah, ic_peak_height and voltage_slope_v_per_s all measure how much charge this cell accepts and are correlated above 0.9. Their combined contribution is meaningful; how the model divides credit between them is not, and one may carry a sign opposite to its physics. Read them as a group."
+    "caveat": "Three of these bars \u2014 charge taken in, the charge jump, and how fast voltage rises \u2014 all track the same thing, so read them as one group. The group total is solid. How the model splits credit between those three is not, and one of them can even point the wrong way."
   }
 }

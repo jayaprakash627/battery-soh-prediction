@@ -116,3 +116,28 @@ def test_a_healthier_charge_scores_higher_over_http(client):
     good = client.post("/api/predict", json=charge_curve(capacity_ah=2.0)).json()
     bad = client.post("/api/predict", json=charge_curve(capacity_ah=1.4)).json()
     assert bad["prediction"]["soh_pct"] < good["prediction"]["soh_pct"]
+
+
+def test_predict_from_features_matches_predicting_from_the_curve(client):
+    """The two entry points must never disagree — they are one model."""
+    from_curve = client.post("/api/predict", json=charge_curve(capacity_ah=1.7)).json()
+    from_features = client.post(
+        "/api/predict/features",
+        json={"features": from_curve["features"], "confidence": 0.9}).json()
+    assert from_features["prediction"]["soh_pct"] == \
+        from_curve["prediction"]["soh_pct"]
+
+
+def test_predict_from_features_rejects_a_missing_measurement(client):
+    r = client.post("/api/predict/features", json={"features": {"temp_max_c": 25.0}})
+    assert r.status_code == 422
+    assert r.json()["detail"]["error"] == "missing_features"
+
+
+def test_predict_from_features_rejects_an_invented_measurement(client):
+    from app.features import FEATURE_NAMES
+    features = {n: 1.0 for n in FEATURE_NAMES}
+    features["battery_vibes"] = 9.0
+    r = client.post("/api/predict/features", json={"features": features})
+    assert r.status_code == 422
+    assert r.json()["detail"]["unknown"] == ["battery_vibes"]
