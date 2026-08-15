@@ -1,0 +1,94 @@
+{
+  "kind": "ridge",
+  "feature_names": [
+    "window_charge_ah",
+    "ic_peak_height",
+    "ic_peak_voltage",
+    "voltage_slope_v_per_s",
+    "cv_phase_seconds",
+    "temp_rise_c",
+    "temp_max_c"
+  ],
+  "coefficients": [
+    6.976762156808595,
+    5.126241843883528,
+    0.11059427171961247,
+    3.491072288655141,
+    1.1281361186201384,
+    -1.7324640570211118,
+    -0.2147955324950714
+  ],
+  "intercept": 80.91667739420934,
+  "standardiser": {
+    "mean": [
+      0.7761684498886409,
+      4.249194271714921,
+      4.021659209354126,
+      0.000123618040089087,
+      5797.342720489966,
+      0.13600756570155773,
+      31.287195150334078
+    ],
+    "scale": [
+      0.1322538836392742,
+      0.8022128174948462,
+      0.03339214183825855,
+      2.2042780528817133e-05,
+      675.1193741495509,
+      2.6604007252193966,
+      3.1909008324087997
+    ]
+  },
+  "interval": {
+    "p50_abs_err_pct": 1.1508,
+    "p90_abs_err_pct": 3.8037,
+    "p95_abs_err_pct": 4.5057,
+    "basis": "leave-one-cell-out residuals"
+  },
+  "trained_on": {
+    "cycles": 898,
+    "cells": [
+      "B0005",
+      "B0006",
+      "B0007",
+      "B0018",
+      "B0036",
+      "B0042",
+      "B0043",
+      "B0044"
+    ],
+    "soh_range_pct": [
+      64.37,
+      101.26
+    ]
+  },
+  "honest_performance": {
+    "r2": 0.9197,
+    "mae_pct": 1.6266,
+    "rmse_pct": 2.2621,
+    "max_abs_err_pct": 9.337,
+    "n": 898,
+    "mae_spread_across_cells_pct": 2.5861
+  },
+  "collinearity": {
+    "threshold": 0.9,
+    "pairs": [
+      {
+        "a": "window_charge_ah",
+        "b": "voltage_slope_v_per_s",
+        "r": -0.973
+      },
+      {
+        "a": "window_charge_ah",
+        "b": "ic_peak_height",
+        "r": 0.962
+      },
+      {
+        "a": "ic_peak_height",
+        "b": "voltage_slope_v_per_s",
+        "r": -0.953
+      }
+    ],
+    "caveat": "window_charge_ah, ic_peak_height and voltage_slope_v_per_s all measure how much charge this cell accepts and are correlated above 0.9. Their combined contribution is meaningful; how the model divides credit between them is not, and one may carry a sign opposite to its physics. Read them as a group."
+  }
+}

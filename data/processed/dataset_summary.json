@@ -1,0 +1,31 @@
+{
+  "cycles_in": 902,
+  "rows_out": 898,
+  "dropped": 4,
+  "drop_reasons": {
+    "charge starts at 3.873": 1,
+    "charge starts at 3.865": 1,
+    "charge starts at 3.866": 1,
+    "channels contain NaN or": 1
+  },
+  "dropped_by_cell": {
+    "B0005": 1,
+    "B0006": 1,
+    "B0007": 1,
+    "B0036": 1
+  },
+  "rows_by_cell": {
+    "B0005": 165,
+    "B0006": 128,
+    "B0007": 165,
+    "B0018": 129,
+    "B0036": 194,
+    "B0042": 39,
+    "B0043": 39,
+    "B0044": 39
+  },
+  "soh_range_pct": [
+    64.37,
+    101.26
+  ]
+}

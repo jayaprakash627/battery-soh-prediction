@@ -1,0 +1,556 @@
+{
+  "reference_protocol": {
+    "ambient_c": [
+      21.0,
+      27.0
+    ],
+    "charge_current_a": [
+      1.3,
+      1.7
+    ],
+    "discharge_current_a": [
+      1.75,
+      2.25
+    ],
+    "capacity_band_ah": [
+      0.8,
+      2.2
+    ],
+    "min_cycles_per_cell": 15,
+    "max_capacity_trend_rho": -0.3
+  },
+  "cells_in_archive": 34,
+  "duplicate_files_skipped": [
+    "3. BatteryAgingARC_25-44/B0025.mat",
+    "3. BatteryAgingARC_25-44/B0026.mat",
+    "3. BatteryAgingARC_25-44/B0027.mat",
+    "3. BatteryAgingARC_25-44/B0028.mat"
+  ],
+  "cells_included": [
+    "B0005",
+    "B0006",
+    "B0007",
+    "B0018",
+    "B0036",
+    "B0042",
+    "B0043",
+    "B0044"
+  ],
+  "cells_excluded": [
+    "B0025",
+    "B0026",
+    "B0027",
+    "B0028",
+    "B0029",
+    "B0030",
+    "B0031",
+    "B0032",
+    "B0033",
+    "B0034",
+    "B0038",
+    "B0039",
+    "B0040",
+    "B0041",
+    "B0045",
+    "B0046",
+    "B0047",
+    "B0048",
+    "B0049",
+    "B0050",
+    "B0051",
+    "B0052",
+    "B0053",
+    "B0054",
+    "B0055",
+    "B0056"
+  ],
+  "cycles_admitted": 902,
+  "rejection_reasons": {
+    "charge current -0.00": 1,
+    "charge current 0.14": 1,
+    "charge current 1.29": 6,
+    "charge current 1.28": 3,
+    "charge current 1.27": 2,
+    "charge current 1.30": 1,
+    "charge current 1.23": 3,
+    "charge current 1.24": 2,
+    "charge current 1.20": 3,
+    "charge current 1.18": 2,
+    "charge current 1.26": 2,
+    "charge current 1.16": 4,
+    "charge current 1.25": 3,
+    "charge current 1.21": 1,
+    "charge current 1.17": 3,
+    "charge current 1.12": 2,
+    "charge current 1.13": 4,
+    "charge current 1.15": 2,
+    "charge current 1.09": 2,
+    "charge current 0.10": 1,
+    "charge current 0.80": 1,
+    "charge current 0.25": 2,
+    "charge current 0.05": 1,
+    "discharge rate 0.00": 25,
+    "discharge rate 4.02": 13,
+    "discharge rate 0.01": 14,
+    "discharge rate 3.99": 1,
+    "discharge rate 3.97": 6,
+    "discharge rate 1.00": 11,
+    "charge current 0.63": 1,
+    "charge current 0.47": 1,
+    "ambient 43\u201343\u00b0C outside": 156,
+    "charge current 0.55": 1,
+    "charge current 1.10": 1,
+    "discharge rate 4.03": 376,
+    "charge current 0.92": 1,
+    "charge current 0.21": 2,
+    "charge current 0.18": 1,
+    "charge current 0.20": 2,
+    "charge current 0.35": 1,
+    "charge current 0.38": 2,
+    "charge current 0.32": 1,
+    "capacity 2.44 Ah": 1,
+    "charge current 1.22": 1,
+    "charge current 1.19": 1,
+    "charge current 1.14": 1,
+    "charge current 1.11": 2,
+    "charge current 1.08": 1,
+    "ambient 24\u201344\u00b0C outside": 3,
+    "ambient 44\u201344\u00b0C outside": 102,
+    "charge current 0.54": 1,
+    "charge current 0.39": 3,
+    "charge current 0.37": 6,
+    "charge current 0.73": 1,
+    "charge current 0.53": 5,
+    "charge current 0.51": 4,
+    "charge current 0.52": 1,
+    "ambient 4\u20134\u00b0C outside": 990,
+    "charge current 0.41": 1,
+    "capacity 0.00 Ah": 3,
+    "ambient 4\u201322\u00b0C outside": 3,
+    "charge current 0.11": 1
+  },
+  "per_cell": {
+    "B0005": {
+      "file": "1. BatteryAgingARC-FY08Q4/B0005.mat",
+      "paired_cycles": 167,
+      "admissible_cycles": 166,
+      "rejected": {
+        "charge current -0.00": 1
+      },
+      "capacity_trend_rho": -0.993,
+      "capacity_first_ah": 1.8565,
+      "capacity_last_ah": 1.3251,
+      "cell_verdict": "included",
+      "soh_first_pct": 92.82,
+      "soh_last_pct": 66.25
+    },
+    "B0006": {
+      "file": "1. BatteryAgingARC-FY08Q4/B0006.mat",
+      "paired_cycles": 167,
+      "admissible_cycles": 129,
+      "rejected": {
+        "charge current 0.14": 1,
+        "charge current 1.29": 6,
+        "charge current 1.28": 3,
+        "charge current 1.27": 1,
+        "charge current 1.30": 1,
+        "charge current 1.23": 3,
+        "charge current 1.24": 2,
+        "charge current 1.20": 3,
+        "charge current 1.18": 1,
+        "charge current 1.26": 2,
+        "charge current 1.16": 3,
+        "charge current 1.25": 1,
+        "charge current 1.21": 1,
+        "charge current 1.17": 3,
+        "charge current 1.12": 1,
+        "charge current 1.13": 3,
+        "charge current 1.15": 2,
+        "charge current 1.09": 1
+      },
+      "capacity_trend_rho": -0.99,
+      "capacity_first_ah": 2.0353,
+      "capacity_last_ah": 1.326,
+      "cell_verdict": "included",
+      "soh_first_pct": 101.77,
+      "soh_last_pct": 66.3
+    },
+    "B0007": {
+      "file": "1. BatteryAgingARC-FY08Q4/B0007.mat",
+      "paired_cycles": 167,
+      "admissible_cycles": 166,
+      "rejected": {
+        "charge current 0.10": 1
+      },
+      "capacity_trend_rho": -0.994,
+      "capacity_first_ah": 1.8911,
+      "capacity_last_ah": 1.4325,
+      "cell_verdict": "included",
+      "soh_first_pct": 94.55,
+      "soh_last_pct": 71.62
+    },
+    "B0018": {
+      "file": "1. BatteryAgingARC-FY08Q4/B0018.mat",
+      "paired_cycles": 132,
+      "admissible_cycles": 129,
+      "rejected": {
+        "charge current 0.80": 1,
+        "charge current 0.25": 1,
+        "charge current 0.05": 1
+      },
+      "capacity_trend_rho": -0.974,
+      "capacity_first_ah": 1.8432,
+      "capacity_last_ah": 1.3411,
+      "cell_verdict": "included",
+      "soh_first_pct": 92.16,
+      "soh_last_pct": 67.05
+    },
+    "B0025": {
+      "file": "2. BatteryAgingARC_25_26_27_28_P1/B0025.mat",
+      "paired_cycles": 28,
+      "admissible_cycles": 12,
+      "rejected": {
+        "discharge rate 0.00": 7,
+        "discharge rate 4.02": 7,
+        "discharge rate 0.01": 2
+      },
+      "cell_verdict": "excluded: 12 admissible cycles, fewer than the 15 needed to be a trajectory"
+    },
+    "B0026": {
+      "file": "2. BatteryAgingARC_25_26_27_28_P1/B0026.mat",
+      "paired_cycles": 28,
+      "admissible_cycles": 12,
+      "rejected": {
+        "discharge rate 0.00": 7,
+        "discharge rate 4.02": 5,
+        "discharge rate 3.99": 1,
+        "discharge rate 0.01": 3
+      },
+      "cell_verdict": "excluded: 12 admissible cycles, fewer than the 15 needed to be a trajectory"
+    },
+    "B0027": {
+      "file": "2. BatteryAgingARC_25_26_27_28_P1/B0027.mat",
+      "paired_cycles": 28,
+      "admissible_cycles": 12,
+      "rejected": {
+        "discharge rate 0.00": 6,
+        "discharge rate 0.01": 3,
+        "discharge rate 3.97": 6,
+        "charge current 1.18": 1
+      },
+      "cell_verdict": "excluded: 12 admissible cycles, fewer than the 15 needed to be a trajectory"
+    },
+    "B0028": {
+      "file": "2. BatteryAgingARC_25_26_27_28_P1/B0028.mat",
+      "paired_cycles": 28,
+      "admissible_cycles": 6,
+      "rejected": {
+        "discharge rate 1.00": 11,
+        "discharge rate 0.00": 4,
+        "charge current 0.63": 1,
+        "discharge rate 0.01": 5,
+        "charge current 0.47": 1
+      },
+      "cell_verdict": "excluded: 6 admissible cycles, fewer than the 15 needed to be a trajectory"
+    },
+    "B0029": {
+      "file": "3. BatteryAgingARC_25-44/B0029.mat",
+      "paired_cycles": 39,
+      "admissible_cycles": 0,
+      "rejected": {
+        "ambient 43\u201343\u00b0C outside": 39
+      },
+      "cell_verdict": "excluded: 0 admissible cycles, fewer than the 15 needed to be a trajectory"
+    },
+    "B0030": {
+      "file": "3. BatteryAgingARC_25-44/B0030.mat",
+      "paired_cycles": 39,
+      "admissible_cycles": 0,
+      "rejected": {
+        "ambient 43\u201343\u00b0C outside": 39
+      },
+      "cell_verdict": "excluded: 0 admissible cycles, fewer than the 15 needed to be a trajectory"
+    },
+    "B0031": {
+      "file": "3. BatteryAgingARC_25-44/B0031.mat",
+      "paired_cycles": 39,
+      "admissible_cycles": 0,
+      "rejected": {
+        "ambient 43\u201343\u00b0C outside": 39
+      },
+      "cell_verdict": "excluded: 0 admissible cycles, fewer than the 15 needed to be a trajectory"
+    },
+    "B0032": {
+      "file": "3. BatteryAgingARC_25-44/B0032.mat",
+      "paired_cycles": 39,
+      "admissible_cycles": 0,
+      "rejected": {
+        "ambient 43\u201343\u00b0C outside": 39
+      },
+      "cell_verdict": "excluded: 0 admissible cycles, fewer than the 15 needed to be a trajectory"
+    },
+    "B0033": {
+      "file": "3. BatteryAgingARC_25-44/B0033.mat",
+      "paired_cycles": 196,
+      "admissible_cycles": 0,
+      "rejected": {
+        "discharge rate 0.00": 1,
+        "charge current 0.55": 1,
+        "charge current 1.10": 1,
+        "charge current 1.25": 2,
+        "charge current 1.27": 1,
+        "discharge rate 4.02": 1,
+        "discharge rate 4.03": 179,
+        "discharge rate 0.01": 1,
+        "charge current 0.92": 1,
+        "charge current 0.25": 1,
+        "charge current 0.21": 2,
+        "charge current 0.18": 1,
+        "charge current 0.20": 1,
+        "charge current 0.35": 1,
+        "charge current 0.38": 1,
+        "charge current 0.32": 1
+      },
+      "cell_verdict": "excluded: 0 admissible cycles, fewer than the 15 needed to be a trajectory"
+    },
+    "B0034": {
+      "file": "3. BatteryAgingARC_25-44/B0034.mat",
+      "paired_cycles": 196,
+      "admissible_cycles": 0,
+      "rejected": {
+        "discharge rate 4.03": 196
+      },
+      "cell_verdict": "excluded: 0 admissible cycles, fewer than the 15 needed to be a trajectory"
+    },
+    "B0036": {
+      "file": "3. BatteryAgingARC_25-44/B0036.mat",
+      "paired_cycles": 196,
+      "admissible_cycles": 195,
+      "rejected": {
+        "capacity 2.44 Ah": 1
+      },
+      "capacity_trend_rho": -0.974,
+      "capacity_first_ah": 1.8011,
+      "capacity_last_ah": 1.5591,
+      "cell_verdict": "included",
+      "soh_first_pct": 90.06,
+      "soh_last_pct": 77.96
+    },
+    "B0038": {
+      "file": "3. BatteryAgingARC_25-44/B0038.mat",
+      "paired_cycles": 46,
+      "admissible_cycles": 0,
+      "rejected": {
+        "discharge rate 4.03": 1,
+        "charge current 1.22": 1,
+        "charge current 1.19": 1,
+        "charge current 1.14": 1,
+        "charge current 1.12": 1,
+        "charge current 1.09": 1,
+        "charge current 1.16": 1,
+        "charge current 1.13": 1,
+        "charge current 1.11": 2,
+        "charge current 1.08": 1,
+        "ambient 24\u201344\u00b0C outside": 1,
+        "ambient 44\u201344\u00b0C outside": 34
+      },
+      "cell_verdict": "excluded: 0 admissible cycles, fewer than the 15 needed to be a trajectory"
+    },
+    "B0039": {
+      "file": "3. BatteryAgingARC_25-44/B0039.mat",
+      "paired_cycles": 46,
+      "admissible_cycles": 0,
+      "rejected": {
+        "charge current 0.54": 1,
+        "charge current 0.39": 3,
+        "charge current 0.38": 1,
+        "charge current 0.37": 6,
+        "ambient 24\u201344\u00b0C outside": 1,
+        "ambient 44\u201344\u00b0C outside": 34
+      },
+      "cell_verdict": "excluded: 0 admissible cycles, fewer than the 15 needed to be a trajectory"
+    },
+    "B0040": {
+      "file": "3. BatteryAgingARC_25-44/B0040.mat",
+      "paired_cycles": 46,
+      "admissible_cycles": 0,
+      "rejected": {
+        "charge current 0.73": 1,
+        "charge current 0.53": 5,
+        "charge current 0.51": 4,
+        "charge current 0.52": 1,
+        "ambient 24\u201344\u00b0C outside": 1,
+        "ambient 44\u201344\u00b0C outside": 34
+      },
+      "cell_verdict": "excluded: 0 admissible cycles, fewer than the 15 needed to be a trajectory"
+    },
+    "B0041": {
+      "file": "3. BatteryAgingARC_25-44/B0041.mat",
+      "paired_cycles": 66,
+      "admissible_cycles": 0,
+      "rejected": {
+        "ambient 4\u20134\u00b0C outside": 66
+      },
+      "cell_verdict": "excluded: 0 admissible cycles, fewer than the 15 needed to be a trajectory"
+    },
+    "B0042": {
+      "file": "3. BatteryAgingARC_25-44/B0042.mat",
+      "paired_cycles": 112,
+      "admissible_cycles": 39,
+      "rejected": {
+        "charge current 0.41": 1,
+        "capacity 0.00 Ah": 1,
+        "ambient 4\u201322\u00b0C outside": 1,
+        "ambient 4\u20134\u00b0C outside": 70
+      },
+      "capacity_trend_rho": -0.982,
+      "capacity_first_ah": 1.7315,
+      "capacity_last_ah": 1.5656,
+      "cell_verdict": "included",
+      "soh_first_pct": 86.57,
+      "soh_last_pct": 78.28
+    },
+    "B0043": {
+      "file": "3. BatteryAgingARC_25-44/B0043.mat",
+      "paired_cycles": 112,
+      "admissible_cycles": 39,
+      "rejected": {
+        "charge current 0.20": 1,
+        "capacity 0.00 Ah": 1,
+        "ambient 4\u201322\u00b0C outside": 1,
+        "ambient 4\u20134\u00b0C outside": 70
+      },
+      "capacity_trend_rho": -0.995,
+      "capacity_first_ah": 1.6956,
+      "capacity_last_ah": 1.4695,
+      "cell_verdict": "included",
+      "soh_first_pct": 84.78,
+      "soh_last_pct": 73.47
+    },
+    "B0044": {
+      "file": "3. BatteryAgingARC_25-44/B0044.mat",
+      "paired_cycles": 112,
+      "admissible_cycles": 39,
+      "rejected": {
+        "charge current 0.11": 1,
+        "capacity 0.00 Ah": 1,
+        "ambient 4\u201322\u00b0C outside": 1,
+        "ambient 4\u20134\u00b0C outside": 70
+      },
+      "capacity_trend_rho": -0.997,
+      "capacity_first_ah": 1.6625,
+      "capacity_last_ah": 1.415,
+      "cell_verdict": "included",
+      "soh_first_pct": 83.12,
+      "soh_last_pct": 70.75
+    },
+    "B0045": {
+      "file": "4. BatteryAgingARC_45_46_47_48/B0045.mat",
+      "paired_cycles": 71,
+      "admissible_cycles": 0,
+      "rejected": {
+        "ambient 4\u20134\u00b0C outside": 71
+      },
+      "cell_verdict": "excluded: 0 admissible cycles, fewer than the 15 needed to be a trajectory"
+    },
+    "B0046": {
+      "file": "4. BatteryAgingARC_45_46_47_48/B0046.mat",
+      "paired_cycles": 71,
+      "admissible_cycles": 0,
+      "rejected": {
+        "ambient 4\u20134\u00b0C outside": 71
+      },
+      "cell_verdict": "excluded: 0 admissible cycles, fewer than the 15 needed to be a trajectory"
+    },
+    "B0047": {
+      "file": "4. BatteryAgingARC_45_46_47_48/B0047.mat",
+      "paired_cycles": 71,
+      "admissible_cycles": 0,
+      "rejected": {
+        "ambient 4\u20134\u00b0C outside": 71
+      },
+      "cell_verdict": "excluded: 0 admissible cycles, fewer than the 15 needed to be a trajectory"
+    },
+    "B0048": {
+      "file": "4. BatteryAgingARC_45_46_47_48/B0048.mat",
+      "paired_cycles": 71,
+      "admissible_cycles": 0,
+      "rejected": {
+        "ambient 4\u20134\u00b0C outside": 71
+      },
+      "cell_verdict": "excluded: 0 admissible cycles, fewer than the 15 needed to be a trajectory"
+    },
+    "B0049": {
+      "file": "5. BatteryAgingARC_49_50_51_52/B0049.mat",
+      "paired_cycles": 24,
+      "admissible_cycles": 0,
+      "rejected": {
+        "ambient 4\u20134\u00b0C outside": 24
+      },
+      "cell_verdict": "excluded: 0 admissible cycles, fewer than the 15 needed to be a trajectory"
+    },
+    "B0050": {
+      "file": "5. BatteryAgingARC_49_50_51_52/B0050.mat",
+      "paired_cycles": 20,
+      "admissible_cycles": 0,
+      "rejected": {
+        "ambient 4\u20134\u00b0C outside": 20
+      },
+      "cell_verdict": "excluded: 0 admissible cycles, fewer than the 15 needed to be a trajectory"
+    },
+    "B0051": {
+      "file": "5. BatteryAgingARC_49_50_51_52/B0051.mat",
+      "paired_cycles": 24,
+      "admissible_cycles": 0,
+      "rejected": {
+        "ambient 4\u20134\u00b0C outside": 24
+      },
+      "cell_verdict": "excluded: 0 admissible cycles, fewer than the 15 needed to be a trajectory"
+    },
+    "B0052": {
+      "file": "5. BatteryAgingARC_49_50_51_52/B0052.mat",
+      "paired_cycles": 3,
+      "admissible_cycles": 0,
+      "rejected": {
+        "ambient 4\u20134\u00b0C outside": 3
+      },
+      "cell_verdict": "excluded: 0 admissible cycles, fewer than the 15 needed to be a trajectory"
+    },
+    "B0053": {
+      "file": "6. BatteryAgingARC_53_54_55_56/B0053.mat",
+      "paired_cycles": 55,
+      "admissible_cycles": 0,
+      "rejected": {
+        "ambient 4\u20134\u00b0C outside": 55
+      },
+      "cell_verdict": "excluded: 0 admissible cycles, fewer than the 15 needed to be a trajectory"
+    },
+    "B0054": {
+      "file": "6. BatteryAgingARC_53_54_55_56/B0054.mat",
+      "paired_cycles": 102,
+      "admissible_cycles": 0,
+      "rejected": {
+        "ambient 4\u20134\u00b0C outside": 102
+      },
+      "cell_verdict": "excluded: 0 admissible cycles, fewer than the 15 needed to be a trajectory"
+    },
+    "B0055": {
+      "file": "6. BatteryAgingARC_53_54_55_56/B0055.mat",
+      "paired_cycles": 101,
+      "admissible_cycles": 0,
+      "rejected": {
+        "ambient 4\u20134\u00b0C outside": 101
+      },
+      "cell_verdict": "excluded: 0 admissible cycles, fewer than the 15 needed to be a trajectory"
+    },
+    "B0056": {
+      "file": "6. BatteryAgingARC_53_54_55_56/B0056.mat",
+      "paired_cycles": 101,
+      "admissible_cycles": 0,
+      "rejected": {
+        "ambient 4\u20134\u00b0C outside": 101
+      },
+      "cell_verdict": "excluded: 0 admissible cycles, fewer than the 15 needed to be a trajectory"
+    }
+  }
+}

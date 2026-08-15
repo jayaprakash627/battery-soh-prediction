@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Battery State-of-Health Prediction</title>
+<meta name="description" content="Estimating remaining battery capacity from a single ordinary charge — trained on NASA cell-ageing data and scored on cells it never saw.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<!-- The ?v= is a cache buster. Without it a browser that has visited before keeps
+     running the previous style.css/app.js after a deploy — it holds the old file
+     while the network log cheerfully reports 200. Bump this string whenever
+     either file changes. -->
+<link rel="stylesheet" href="/static/style.css?v=3">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar__inner">
+    <span class="topbar__mark">SoH<span class="topbar__dot">.</span></span>
+    <nav class="topbar__nav">
+      <a href="#finding">Finding</a>
+      <a href="#try">Try it</a>
+      <a href="#life">Over a life</a>
+      <a href="#card">Model card</a>
+      <a href="/docs">API</a>
+    </nav>
+    <button id="theme-toggle" class="ghost-btn" aria-label="Toggle colour theme">◐</button>
+  </div>
+</header>
+
+<main>
+
+<!-- ============================== HERO ================================== -->
+<section class="hero wrap">
+  <p class="eyebrow">NASA cell-ageing data · leave-one-cell-out</p>
+  <h1>How much battery is left,<br>without discharging it?</h1>
+  <p class="lede">
+    Measuring a pack's true capacity means running it flat — hours off the road.
+    But every pack gets <em>charged</em>, and a charger already measures voltage,
+    current and temperature. This model reads a few minutes of an ordinary
+    charge and estimates what capacity remains, knowing nothing about the pack's
+    history.
+  </p>
+
+  <div class="stat-row" id="hero-stats">
+    <div class="stat"><span class="stat__v" data-stat="mae">—</span><span class="stat__l">mean error, unseen cells</span></div>
+    <div class="stat"><span class="stat__v" data-stat="cells">—</span><span class="stat__l">cells</span></div>
+    <div class="stat"><span class="stat__v" data-stat="cycles">—</span><span class="stat__l">measured cycles</span></div>
+    <div class="stat"><span class="stat__v" data-stat="features">—</span><span class="stat__l">features, all from one charge</span></div>
+  </div>
+</section>
+
+<!-- ============================ THE FINDING ============================= -->
+<section id="finding" class="wrap section">
+  <h2>The number depends on how you split the data</h2>
+  <p class="section__sub">
+    Same model, same features, same cells — three ways of deciding what counts
+    as "unseen". The gap between them is the whole story, and it is why most
+    reported accuracy on this dataset means less than it looks like.
+  </p>
+
+  <div class="splits" id="splits"></div>
+
+  <div class="callout" id="gap-callout">
+    <h3>Why the first number is a mirage</h3>
+    <p>
+      Shuffling cycles puts cycle 100 in training and cycle 101 in test. They are
+      nearly the same measurement of the same cell an hour apart, so the model
+      can score well by interpolating between neighbours it has already seen. It
+      answers <em>"can you fill a gap in an experiment you already watched"</em> —
+      a question no fleet operator has ever asked.
+    </p>
+    <p>
+      Holding out a whole cell asks the real one: here is a pack you have never
+      met. The honest number is the one this project reports, and the one the
+      shipped model was chosen on.
+    </p>
+  </div>
+</section>
+
+<!-- ============================== TRY IT =============================== -->
+<section id="try" class="wrap section">
+  <h2>Read a real charge</h2>
+  <p class="section__sub">
+    These are measured curves from the dataset, not simulations. Pick one and
+    the model will estimate its state of health from the charge alone — then you
+    can compare against the full discharge that actually followed it, which the
+    model never sees.
+  </p>
+
+  <div class="picker" id="picker"></div>
+
+  <div class="try-grid">
+    <div class="panel">
+      <div class="panel__head">
+        <h3>The charge, as logged</h3>
+        <span class="panel__note" id="curve-note">—</span>
+      </div>
+      <canvas id="curve-chart" data-h="300"></canvas>
+      <p class="legend">
+        <span class="key key--teal"></span>voltage
+        <span class="key key--blue"></span>current
+        <span class="key key--violet"></span>temperature
+        <span class="key key--band"></span>the 3.90–4.15 V window the model reads
+      </p>
+    </div>
+
+    <div class="panel panel--result">
+      <div class="panel__head"><h3>What the model says</h3></div>
+      <div id="result">
+        <p class="muted">Pick a charge above.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel--wide">
+    <div class="panel__head">
+      <h3>Why it said that</h3>
+      <span class="panel__note">Each bar is that measurement's share of the answer, in points of SoH, against an average cell.</span>
+    </div>
+    <div id="contributions" class="contribs"><p class="muted">—</p></div>
+  </div>
+</section>
+
+<!-- ============================ OVER A LIFE ============================= -->
+<section id="life" class="wrap section">
+  <h2>Across a whole cell's life</h2>
+  <p class="section__sub">
+    Every point below was predicted by a model trained without that cell. Solid
+    line is what the full discharge actually measured; dots are what the charge
+    curve alone predicted.
+  </p>
+  <div class="panel panel--wide">
+    <div class="panel__head">
+      <h3 id="life-title">—</h3>
+      <div class="cellswitch" id="cellswitch"></div>
+    </div>
+    <canvas id="life-chart" data-h="340"></canvas>
+    <p class="legend">
+      <span class="key key--teal"></span>measured (full discharge)
+      <span class="key key--dot"></span>predicted (charge only)
+      <span class="key key--eol"></span>80% end-of-life threshold
+    </p>
+  </div>
+</section>
+
+<!-- ============================ MODEL CARD ============================== -->
+<section id="card" class="wrap section">
+  <h2>Model card</h2>
+  <p class="section__sub">
+    What it is, what it was measured at, and — the part that matters — what it
+    must not be used for.
+  </p>
+  <div class="card-grid">
+    <div class="panel">
+      <div class="panel__head"><h3>The features</h3></div>
+      <div id="feature-list" class="features"><p class="muted">—</p></div>
+    </div>
+    <div class="panel">
+      <div class="panel__head"><h3>Limits</h3></div>
+      <ul id="limits" class="limits"><li class="muted">—</li></ul>
+      <div class="panel__head" style="margin-top:1.6rem"><h3>Not in the model, on purpose</h3></div>
+      <ul class="limits">
+        <li><b>Cycle number.</b> The strongest predictor in the dataset and useless in the field — it leaks the answer, and a second-hand pack does not arrive with its cycle count written on it.</li>
+        <li><b>Previous capacity.</b> Same problem, worse: capacity is what is being predicted.</li>
+        <li><b>Cell identity.</b> Eight cells is not enough to learn per-cell offsets that generalise. It is exactly enough to memorise them.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="wrap">
+  <p>
+    Data: NASA Ames Prognostics Center of Excellence battery ageing dataset.
+    Built by <a href="https://jayaprakash627.github.io">Jayaprakash M</a> ·
+    <a href="https://github.com/jayaprakash627/battery-soh-prediction">source</a>
+  </p>
+</footer>
+
+</main>
+<script src="/static/app.js?v=3"></script>
+</body>
+</html>

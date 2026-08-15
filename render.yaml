@@ -1,0 +1,36 @@
+# Render Blueprint — a written-down copy of how this service should be set up.
+#
+# Deploying with New + → Blueprint → this repo rebuilds the service correctly in
+# one step. If the service is later created or edited by hand in the dashboard,
+# Render stops reading this file, and then it is documentation only — so change
+# a setting in both places or this drifts into a lie.
+
+services:
+  - type: web
+    name: battery-soh-prediction
+    runtime: python
+    plan: free
+    region: singapore          # closest Render region to India
+
+    branch: main
+    # Root Directory is deliberately unset, i.e. the repo root — which is why
+    # requirements.txt has to stay there.
+    #
+    # Note this installs requirements.txt, NOT requirements-dev.txt: the host
+    # serves a model it does not train, so scikit-learn and scipy are absent
+    # from the deployed image on purpose. artifacts/model.json is committed and
+    # is all the service needs.
+    buildCommand: pip install -r requirements.txt
+
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+
+    # /api/health reports model_loaded, so a deploy that shipped a stale or
+    # missing artifact surfaces here rather than as a 503 for the first visitor.
+    healthCheckPath: /api/health
+
+    # No environment variables, no database, no disk. The service is stateless:
+    # it reads a JSON model at import and does arithmetic on request bodies.
+    # Nothing to persist means nothing to lose when the free instance restarts.
+    #
+    # What the free plan does cost is a cold start — the instance sleeps after
+    # ~15 minutes idle and the next request waits 50+ seconds.

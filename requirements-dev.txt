@@ -1,0 +1,16 @@
+# Everything needed to rebuild the model from raw data, and to run the tests.
+# Not installed on the deployed host — see the note at the top of requirements.txt.
+
+-r requirements.txt
+
+# Reads NASA's MATLAB v5 files. Used only by pipeline/ingest.py.
+scipy~=1.18.0
+
+# Fits the candidate models and runs the cross-validation splits. The fitted
+# result is exported to plain JSON by pipeline/train.py, so this never has to be
+# present at serving time — and a model file is never a pickle, which would make
+# it both an upgrade hazard and an attack surface.
+scikit-learn~=1.9.0
+
+pytest~=9.1.0
+httpx~=0.28          # required by fastapi.testclient

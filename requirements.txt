@@ -1,0 +1,27 @@
+# Runtime dependencies — what the deployed service needs, and nothing else.
+#
+# The list is short on purpose. The trained model is eight coefficients and a
+# standardiser in artifacts/model.json, so predicting is a dot product; the
+# machine-learning stack that produced those coefficients is a build-time tool,
+# not a runtime one. Keeping scikit-learn and scipy out of here means the
+# deployed image is a few hundred megabytes smaller, it starts faster on a free
+# host, and — the part that actually matters — a future scikit-learn release
+# can never silently change what the service predicts.
+#
+# Everything needed to retrain is in requirements-dev.txt.
+#
+# Pinned with `~=` so patch releases (security fixes) still install but a
+# feature version never arrives unannounced.
+
+fastapi~=0.141.1
+uvicorn[standard]~=0.52.1
+
+# Used for the feature arithmetic in app/features.py — interpolation, the
+# cumulative trapezoid integral, and the dQ/dV gradient. The median filter is
+# written out by hand there rather than imported from scipy.signal, which is
+# the only reason scipy is not on this list.
+numpy~=2.5.2
+
+# Pydantic arrives with FastAPI and does the request validation.
+# No frontend dependencies: the UI is plain HTML/CSS/JS with no build step, and
+# both charts are hand-rolled on Canvas2D.

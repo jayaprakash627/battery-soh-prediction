@@ -1,0 +1,5390 @@
+[
+ {
+  "cell_id": "B0005",
+  "cycle": 2,
+  "measured_soh_pct": 92.316,
+  "predicted_soh_pct": 91.331
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 3,
+  "measured_soh_pct": 91.767,
+  "predicted_soh_pct": 91.482
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 4,
+  "measured_soh_pct": 91.763,
+  "predicted_soh_pct": 90.302
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 5,
+  "measured_soh_pct": 91.732,
+  "predicted_soh_pct": 90.294
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 6,
+  "measured_soh_pct": 91.783,
+  "predicted_soh_pct": 89.957
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 7,
+  "measured_soh_pct": 91.757,
+  "predicted_soh_pct": 89.979
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 8,
+  "measured_soh_pct": 91.288,
+  "predicted_soh_pct": 90.227
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 9,
+  "measured_soh_pct": 91.239,
+  "predicted_soh_pct": 89.532
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 10,
+  "measured_soh_pct": 91.231,
+  "predicted_soh_pct": 88.65
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 11,
+  "measured_soh_pct": 91.231,
+  "predicted_soh_pct": 88.878
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 12,
+  "measured_soh_pct": 90.71,
+  "predicted_soh_pct": 87.229
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 13,
+  "measured_soh_pct": 90.688,
+  "predicted_soh_pct": 88.783
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 14,
+  "measured_soh_pct": 90.672,
+  "predicted_soh_pct": 88.987
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 15,
+  "measured_soh_pct": 90.13,
+  "predicted_soh_pct": 89.502
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 16,
+  "measured_soh_pct": 90.105,
+  "predicted_soh_pct": 88.705
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 17,
+  "measured_soh_pct": 90.129,
+  "predicted_soh_pct": 89.172
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 18,
+  "measured_soh_pct": 90.153,
+  "predicted_soh_pct": 88.138
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 19,
+  "measured_soh_pct": 90.139,
+  "predicted_soh_pct": 89.76
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 20,
+  "measured_soh_pct": 92.351,
+  "predicted_soh_pct": 93.984
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 21,
+  "measured_soh_pct": 92.371,
+  "predicted_soh_pct": 93.063
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 22,
+  "measured_soh_pct": 91.809,
+  "predicted_soh_pct": 93.643
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 23,
+  "measured_soh_pct": 91.289,
+  "predicted_soh_pct": 92.545
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 24,
+  "measured_soh_pct": 91.256,
+  "predicted_soh_pct": 92.281
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 25,
+  "measured_soh_pct": 91.279,
+  "predicted_soh_pct": 92.634
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 26,
+  "measured_soh_pct": 90.702,
+  "predicted_soh_pct": 91.599
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 27,
+  "measured_soh_pct": 90.739,
+  "predicted_soh_pct": 91.845
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 28,
+  "measured_soh_pct": 90.698,
+  "predicted_soh_pct": 91.223
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 29,
+  "measured_soh_pct": 90.138,
+  "predicted_soh_pct": 91.694
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 30,
+  "measured_soh_pct": 90.204,
+  "predicted_soh_pct": 91.559
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 31,
+  "measured_soh_pct": 91.535,
+  "predicted_soh_pct": 91.772
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 32,
+  "measured_soh_pct": 90.995,
+  "predicted_soh_pct": 92.153
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 33,
+  "measured_soh_pct": 90.465,
+  "predicted_soh_pct": 90.78
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 34,
+  "measured_soh_pct": 90.231,
+  "predicted_soh_pct": 90.92
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 35,
+  "measured_soh_pct": 89.969,
+  "predicted_soh_pct": 90.862
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 36,
+  "measured_soh_pct": 89.422,
+  "predicted_soh_pct": 91.116
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 37,
+  "measured_soh_pct": 89.146,
+  "predicted_soh_pct": 89.917
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 38,
+  "measured_soh_pct": 88.652,
+  "predicted_soh_pct": 89.724
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 39,
+  "measured_soh_pct": 88.652,
+  "predicted_soh_pct": 89.277
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 40,
+  "measured_soh_pct": 88.394,
+  "predicted_soh_pct": 88.959
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 41,
+  "measured_soh_pct": 88.116,
+  "predicted_soh_pct": 89.029
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 42,
+  "measured_soh_pct": 88.381,
+  "predicted_soh_pct": 88.265
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 43,
+  "measured_soh_pct": 88.133,
+  "predicted_soh_pct": 89.575
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 44,
+  "measured_soh_pct": 87.587,
+  "predicted_soh_pct": 88.074
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 45,
+  "measured_soh_pct": 87.093,
+  "predicted_soh_pct": 87.693
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 46,
+  "measured_soh_pct": 86.805,
+  "predicted_soh_pct": 88.43
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 47,
+  "measured_soh_pct": 89.681,
+  "predicted_soh_pct": 88.082
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 48,
+  "measured_soh_pct": 89.159,
+  "predicted_soh_pct": 89.009
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 49,
+  "measured_soh_pct": 88.368,
+  "predicted_soh_pct": 88.772
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 50,
+  "measured_soh_pct": 87.851,
+  "predicted_soh_pct": 88.328
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 51,
+  "measured_soh_pct": 87.344,
+  "predicted_soh_pct": 89.031
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 52,
+  "measured_soh_pct": 87.086,
+  "predicted_soh_pct": 87.693
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 53,
+  "measured_soh_pct": 86.821,
+  "predicted_soh_pct": 87.178
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 54,
+  "measured_soh_pct": 86.316,
+  "predicted_soh_pct": 86.725
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 55,
+  "measured_soh_pct": 85.79,
+  "predicted_soh_pct": 87.01
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 56,
+  "measured_soh_pct": 85.527,
+  "predicted_soh_pct": 86.083
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 57,
+  "measured_soh_pct": 85.301,
+  "predicted_soh_pct": 85.559
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 58,
+  "measured_soh_pct": 85.016,
+  "predicted_soh_pct": 86.102
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 59,
+  "measured_soh_pct": 84.729,
+  "predicted_soh_pct": 85.496
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 60,
+  "measured_soh_pct": 84.245,
+  "predicted_soh_pct": 84.561
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 61,
+  "measured_soh_pct": 83.724,
+  "predicted_soh_pct": 84.695
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 62,
+  "measured_soh_pct": 83.728,
+  "predicted_soh_pct": 84.147
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 63,
+  "measured_soh_pct": 83.186,
+  "predicted_soh_pct": 83.676
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 64,
+  "measured_soh_pct": 82.951,
+  "predicted_soh_pct": 83.241
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 65,
+  "measured_soh_pct": 82.693,
+  "predicted_soh_pct": 83.067
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 66,
+  "measured_soh_pct": 82.133,
+  "predicted_soh_pct": 82.969
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 67,
+  "measured_soh_pct": 81.893,
+  "predicted_soh_pct": 83.043
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 68,
+  "measured_soh_pct": 81.637,
+  "predicted_soh_pct": 82.129
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 69,
+  "measured_soh_pct": 81.388,
+  "predicted_soh_pct": 82.025
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 70,
+  "measured_soh_pct": 81.106,
+  "predicted_soh_pct": 80.89
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 71,
+  "measured_soh_pct": 80.566,
+  "predicted_soh_pct": 80.837
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 72,
+  "measured_soh_pct": 80.328,
+  "predicted_soh_pct": 80.95
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 73,
+  "measured_soh_pct": 80.076,
+  "predicted_soh_pct": 80.708
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 74,
+  "measured_soh_pct": 79.519,
+  "predicted_soh_pct": 80.088
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 75,
+  "measured_soh_pct": 79.289,
+  "predicted_soh_pct": 79.502
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 76,
+  "measured_soh_pct": 79.247,
+  "predicted_soh_pct": 79.439
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 77,
+  "measured_soh_pct": 79.776,
+  "predicted_soh_pct": 79.671
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 78,
+  "measured_soh_pct": 78.737,
+  "predicted_soh_pct": 79.152
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 79,
+  "measured_soh_pct": 78.245,
+  "predicted_soh_pct": 78.884
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 80,
+  "measured_soh_pct": 77.988,
+  "predicted_soh_pct": 77.937
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 81,
+  "measured_soh_pct": 77.974,
+  "predicted_soh_pct": 78.456
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 82,
+  "measured_soh_pct": 77.734,
+  "predicted_soh_pct": 77.367
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 83,
+  "measured_soh_pct": 77.444,
+  "predicted_soh_pct": 77.257
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 84,
+  "measured_soh_pct": 76.912,
+  "predicted_soh_pct": 76.822
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 85,
+  "measured_soh_pct": 76.396,
+  "predicted_soh_pct": 76.289
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 86,
+  "measured_soh_pct": 76.426,
+  "predicted_soh_pct": 76.554
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 87,
+  "measured_soh_pct": 76.132,
+  "predicted_soh_pct": 75.679
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 88,
+  "measured_soh_pct": 75.874,
+  "predicted_soh_pct": 75.844
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 89,
+  "measured_soh_pct": 78.192,
+  "predicted_soh_pct": 77.884
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 90,
+  "measured_soh_pct": 77.405,
+  "predicted_soh_pct": 77.625
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 91,
+  "measured_soh_pct": 76.619,
+  "predicted_soh_pct": 77.085
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 92,
+  "measured_soh_pct": 76.348,
+  "predicted_soh_pct": 76.438
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 93,
+  "measured_soh_pct": 75.848,
+  "predicted_soh_pct": 76.137
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 94,
+  "measured_soh_pct": 75.595,
+  "predicted_soh_pct": 75.877
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 95,
+  "measured_soh_pct": 75.328,
+  "predicted_soh_pct": 75.334
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 96,
+  "measured_soh_pct": 75.077,
+  "predicted_soh_pct": 75.363
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 97,
+  "measured_soh_pct": 74.542,
+  "predicted_soh_pct": 74.743
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 98,
+  "measured_soh_pct": 74.293,
+  "predicted_soh_pct": 74.728
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 99,
+  "measured_soh_pct": 74.021,
+  "predicted_soh_pct": 74.142
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 100,
+  "measured_soh_pct": 73.76,
+  "predicted_soh_pct": 74.031
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 101,
+  "measured_soh_pct": 74.295,
+  "predicted_soh_pct": 73.32
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 102,
+  "measured_soh_pct": 74.805,
+  "predicted_soh_pct": 74.939
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 103,
+  "measured_soh_pct": 74.04,
+  "predicted_soh_pct": 75.159
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 104,
+  "measured_soh_pct": 73.488,
+  "predicted_soh_pct": 73.613
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 105,
+  "measured_soh_pct": 72.695,
+  "predicted_soh_pct": 73.407
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 106,
+  "measured_soh_pct": 72.707,
+  "predicted_soh_pct": 73.041
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 107,
+  "measured_soh_pct": 72.751,
+  "predicted_soh_pct": 72.795
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 108,
+  "measured_soh_pct": 72.452,
+  "predicted_soh_pct": 72.798
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 109,
+  "measured_soh_pct": 71.933,
+  "predicted_soh_pct": 72.784
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 110,
+  "measured_soh_pct": 71.672,
+  "predicted_soh_pct": 72.28
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 111,
+  "measured_soh_pct": 71.67,
+  "predicted_soh_pct": 71.79
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 112,
+  "measured_soh_pct": 71.403,
+  "predicted_soh_pct": 71.486
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 113,
+  "measured_soh_pct": 71.146,
+  "predicted_soh_pct": 71.616
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 114,
+  "measured_soh_pct": 70.871,
+  "predicted_soh_pct": 72.826
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 115,
+  "measured_soh_pct": 70.621,
+  "predicted_soh_pct": 71.133
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 116,
+  "measured_soh_pct": 70.629,
+  "predicted_soh_pct": 70.545
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 117,
+  "measured_soh_pct": 70.38,
+  "predicted_soh_pct": 71.023
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 118,
+  "measured_soh_pct": 71.67,
+  "predicted_soh_pct": 70.674
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 119,
+  "measured_soh_pct": 71.913,
+  "predicted_soh_pct": 71.7
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 120,
+  "measured_soh_pct": 70.868,
+  "predicted_soh_pct": 73.071
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 121,
+  "measured_soh_pct": 70.349,
+  "predicted_soh_pct": 70.894
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 122,
+  "measured_soh_pct": 70.06,
+  "predicted_soh_pct": 70.629
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 123,
+  "measured_soh_pct": 69.835,
+  "predicted_soh_pct": 70.123
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 124,
+  "measured_soh_pct": 69.564,
+  "predicted_soh_pct": 70.433
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 125,
+  "measured_soh_pct": 69.311,
+  "predicted_soh_pct": 69.832
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 126,
+  "measured_soh_pct": 69.022,
+  "predicted_soh_pct": 70.058
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 127,
+  "measured_soh_pct": 68.762,
+  "predicted_soh_pct": 69.887
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 128,
+  "measured_soh_pct": 68.526,
+  "predicted_soh_pct": 69.492
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 129,
+  "measured_soh_pct": 68.525,
+  "predicted_soh_pct": 69.401
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 130,
+  "measured_soh_pct": 68.237,
+  "predicted_soh_pct": 69.158
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 131,
+  "measured_soh_pct": 68.77,
+  "predicted_soh_pct": 68.618
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 132,
+  "measured_soh_pct": 69.306,
+  "predicted_soh_pct": 69.362
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 133,
+  "measured_soh_pct": 68.493,
+  "predicted_soh_pct": 70.192
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 134,
+  "measured_soh_pct": 68.239,
+  "predicted_soh_pct": 69.187
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 135,
+  "measured_soh_pct": 67.716,
+  "predicted_soh_pct": 68.744
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 136,
+  "measured_soh_pct": 67.732,
+  "predicted_soh_pct": 68.523
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 137,
+  "measured_soh_pct": 67.735,
+  "predicted_soh_pct": 68.621
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 138,
+  "measured_soh_pct": 67.466,
+  "predicted_soh_pct": 68.782
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 139,
+  "measured_soh_pct": 67.21,
+  "predicted_soh_pct": 68.603
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 140,
+  "measured_soh_pct": 66.95,
+  "predicted_soh_pct": 68.453
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 141,
+  "measured_soh_pct": 66.946,
+  "predicted_soh_pct": 68.106
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 142,
+  "measured_soh_pct": 66.7,
+  "predicted_soh_pct": 68.642
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 143,
+  "measured_soh_pct": 66.432,
+  "predicted_soh_pct": 68.137
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 144,
+  "measured_soh_pct": 66.159,
+  "predicted_soh_pct": 67.646
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 145,
+  "measured_soh_pct": 65.909,
+  "predicted_soh_pct": 67.482
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 146,
+  "measured_soh_pct": 65.923,
+  "predicted_soh_pct": 67.474
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 147,
+  "measured_soh_pct": 65.915,
+  "predicted_soh_pct": 67.129
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 148,
+  "measured_soh_pct": 66.194,
+  "predicted_soh_pct": 67.337
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 149,
+  "measured_soh_pct": 68.006,
+  "predicted_soh_pct": 66.718
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 150,
+  "measured_soh_pct": 66.977,
+  "predicted_soh_pct": 69.062
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 151,
+  "measured_soh_pct": 66.451,
+  "predicted_soh_pct": 67.878
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 152,
+  "measured_soh_pct": 66.184,
+  "predicted_soh_pct": 67.75
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 153,
+  "measured_soh_pct": 65.932,
+  "predicted_soh_pct": 67.842
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 154,
+  "measured_soh_pct": 65.674,
+  "predicted_soh_pct": 67.867
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 155,
+  "measured_soh_pct": 65.66,
+  "predicted_soh_pct": 67.164
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 156,
+  "measured_soh_pct": 65.39,
+  "predicted_soh_pct": 65.909
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 157,
+  "measured_soh_pct": 65.152,
+  "predicted_soh_pct": 67.028
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 158,
+  "measured_soh_pct": 65.168,
+  "predicted_soh_pct": 66.622
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 159,
+  "measured_soh_pct": 65.171,
+  "predicted_soh_pct": 66.638
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 160,
+  "measured_soh_pct": 64.894,
+  "predicted_soh_pct": 66.832
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 161,
+  "measured_soh_pct": 64.904,
+  "predicted_soh_pct": 66.692
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 162,
+  "measured_soh_pct": 64.673,
+  "predicted_soh_pct": 66.311
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 163,
+  "measured_soh_pct": 64.4,
+  "predicted_soh_pct": 66.411
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 164,
+  "measured_soh_pct": 64.373,
+  "predicted_soh_pct": 66.31
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 165,
+  "measured_soh_pct": 65.451,
+  "predicted_soh_pct": 66.198
+ },
+ {
+  "cell_id": "B0005",
+  "cycle": 166,
+  "measured_soh_pct": 66.254,
+  "predicted_soh_pct": 67.621
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 2,
+  "measured_soh_pct": 101.257,
+  "predicted_soh_pct": 103.544
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 3,
+  "measured_soh_pct": 100.666,
+  "predicted_soh_pct": 102.419
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 4,
+  "measured_soh_pct": 100.664,
+  "predicted_soh_pct": 101.606
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 5,
+  "measured_soh_pct": 100.026,
+  "predicted_soh_pct": 100.619
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 6,
+  "measured_soh_pct": 100.695,
+  "predicted_soh_pct": 102.804
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 7,
+  "measured_soh_pct": 100.655,
+  "predicted_soh_pct": 99.676
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 8,
+  "measured_soh_pct": 98.439,
+  "predicted_soh_pct": 99.263
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 9,
+  "measured_soh_pct": 98.408,
+  "predicted_soh_pct": 99.662
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 10,
+  "measured_soh_pct": 97.862,
+  "predicted_soh_pct": 98.341
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 11,
+  "measured_soh_pct": 97.28,
+  "predicted_soh_pct": 99.228
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 12,
+  "measured_soh_pct": 96.737,
+  "predicted_soh_pct": 91.795
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 13,
+  "measured_soh_pct": 96.164,
+  "predicted_soh_pct": 95.932
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 14,
+  "measured_soh_pct": 95.594,
+  "predicted_soh_pct": 94.405
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 15,
+  "measured_soh_pct": 95.053,
+  "predicted_soh_pct": 95.741
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 16,
+  "measured_soh_pct": 94.46,
+  "predicted_soh_pct": 95.798
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 17,
+  "measured_soh_pct": 93.914,
+  "predicted_soh_pct": 96.09
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 18,
+  "measured_soh_pct": 93.379,
+  "predicted_soh_pct": 93.995
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 19,
+  "measured_soh_pct": 93.379,
+  "predicted_soh_pct": 93.317
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 20,
+  "measured_soh_pct": 98.981,
+  "predicted_soh_pct": 98.442
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 21,
+  "measured_soh_pct": 97.877,
+  "predicted_soh_pct": 98.646
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 22,
+  "measured_soh_pct": 97.291,
+  "predicted_soh_pct": 99.367
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 23,
+  "measured_soh_pct": 96.212,
+  "predicted_soh_pct": 98.667
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 24,
+  "measured_soh_pct": 97.299,
+  "predicted_soh_pct": 98.025
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 25,
+  "measured_soh_pct": 95.07,
+  "predicted_soh_pct": 97.259
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 26,
+  "measured_soh_pct": 93.934,
+  "predicted_soh_pct": 96.229
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 27,
+  "measured_soh_pct": 93.415,
+  "predicted_soh_pct": 95.592
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 28,
+  "measured_soh_pct": 92.801,
+  "predicted_soh_pct": 94.9
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 29,
+  "measured_soh_pct": 92.26,
+  "predicted_soh_pct": 96.487
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 30,
+  "measured_soh_pct": 92.861,
+  "predicted_soh_pct": 93.105
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 31,
+  "measured_soh_pct": 94.112,
+  "predicted_soh_pct": 95.57
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 32,
+  "measured_soh_pct": 92.764,
+  "predicted_soh_pct": 93.656
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 33,
+  "measured_soh_pct": 91.963,
+  "predicted_soh_pct": 92.707
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 34,
+  "measured_soh_pct": 90.927,
+  "predicted_soh_pct": 91.985
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 35,
+  "measured_soh_pct": 90.674,
+  "predicted_soh_pct": 90.489
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 36,
+  "measured_soh_pct": 89.855,
+  "predicted_soh_pct": 90.316
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 37,
+  "measured_soh_pct": 89.05,
+  "predicted_soh_pct": 89.74
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 38,
+  "measured_soh_pct": 88.551,
+  "predicted_soh_pct": 89.762
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 39,
+  "measured_soh_pct": 88.024,
+  "predicted_soh_pct": 87.921
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 40,
+  "measured_soh_pct": 87.515,
+  "predicted_soh_pct": 87.447
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 41,
+  "measured_soh_pct": 86.975,
+  "predicted_soh_pct": 87.72
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 42,
+  "measured_soh_pct": 87.734,
+  "predicted_soh_pct": 86.251
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 43,
+  "measured_soh_pct": 88.297,
+  "predicted_soh_pct": 90.287
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 44,
+  "measured_soh_pct": 86.689,
+  "predicted_soh_pct": 87.187
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 45,
+  "measured_soh_pct": 85.666,
+  "predicted_soh_pct": 85.555
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 46,
+  "measured_soh_pct": 85.12,
+  "predicted_soh_pct": 84.716
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 47,
+  "measured_soh_pct": 91.186,
+  "predicted_soh_pct": 88.255
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 48,
+  "measured_soh_pct": 90.406,
+  "predicted_soh_pct": 90.985
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 49,
+  "measured_soh_pct": 88.788,
+  "predicted_soh_pct": 89.78
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 50,
+  "measured_soh_pct": 87.237,
+  "predicted_soh_pct": 87.727
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 51,
+  "measured_soh_pct": 86.46,
+  "predicted_soh_pct": 86.144
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 52,
+  "measured_soh_pct": 85.405,
+  "predicted_soh_pct": 85.604
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 53,
+  "measured_soh_pct": 84.88,
+  "predicted_soh_pct": 84.562
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 54,
+  "measured_soh_pct": 84.103,
+  "predicted_soh_pct": 83.718
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 55,
+  "measured_soh_pct": 83.574,
+  "predicted_soh_pct": 82.285
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 56,
+  "measured_soh_pct": 83.038,
+  "predicted_soh_pct": 82.421
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 57,
+  "measured_soh_pct": 82.556,
+  "predicted_soh_pct": 81.146
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 58,
+  "measured_soh_pct": 82.007,
+  "predicted_soh_pct": 80.966
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 59,
+  "measured_soh_pct": 81.46,
+  "predicted_soh_pct": 79.923
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 60,
+  "measured_soh_pct": 80.442,
+  "predicted_soh_pct": 79.222
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 61,
+  "measured_soh_pct": 80.176,
+  "predicted_soh_pct": 78.202
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 62,
+  "measured_soh_pct": 79.949,
+  "predicted_soh_pct": 78.55
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 63,
+  "measured_soh_pct": 79.381,
+  "predicted_soh_pct": 76.898
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 64,
+  "measured_soh_pct": 79.149,
+  "predicted_soh_pct": 76.667
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 65,
+  "measured_soh_pct": 78.357,
+  "predicted_soh_pct": 77.152
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 66,
+  "measured_soh_pct": 78.067,
+  "predicted_soh_pct": 75.334
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 67,
+  "measured_soh_pct": 77.559,
+  "predicted_soh_pct": 74.681
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 68,
+  "measured_soh_pct": 77.034,
+  "predicted_soh_pct": 73.536
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 69,
+  "measured_soh_pct": 76.266,
+  "predicted_soh_pct": 73.862
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 70,
+  "measured_soh_pct": 76.508,
+  "predicted_soh_pct": 73.55
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 71,
+  "measured_soh_pct": 76.233,
+  "predicted_soh_pct": 73.184
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 72,
+  "measured_soh_pct": 75.728,
+  "predicted_soh_pct": 71.743
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 73,
+  "measured_soh_pct": 75.47,
+  "predicted_soh_pct": 70.964
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 74,
+  "measured_soh_pct": 75.2,
+  "predicted_soh_pct": 71.228
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 75,
+  "measured_soh_pct": 74.676,
+  "predicted_soh_pct": 70.816
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 76,
+  "measured_soh_pct": 74.382,
+  "predicted_soh_pct": 71.026
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 77,
+  "measured_soh_pct": 76.514,
+  "predicted_soh_pct": 68.535
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 78,
+  "measured_soh_pct": 75.204,
+  "predicted_soh_pct": 71.556
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 79,
+  "measured_soh_pct": 74.438,
+  "predicted_soh_pct": 70.72
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 80,
+  "measured_soh_pct": 73.914,
+  "predicted_soh_pct": 70.021
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 81,
+  "measured_soh_pct": 73.923,
+  "predicted_soh_pct": 69.094
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 82,
+  "measured_soh_pct": 73.661,
+  "predicted_soh_pct": 68.764
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 83,
+  "measured_soh_pct": 73.376,
+  "predicted_soh_pct": 68.409
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 84,
+  "measured_soh_pct": 72.582,
+  "predicted_soh_pct": 68.779
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 85,
+  "measured_soh_pct": 72.596,
+  "predicted_soh_pct": 68.512
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 86,
+  "measured_soh_pct": 72.357,
+  "predicted_soh_pct": 67.496
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 87,
+  "measured_soh_pct": 72.343,
+  "predicted_soh_pct": 67.433
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 88,
+  "measured_soh_pct": 72.084,
+  "predicted_soh_pct": 67.69
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 89,
+  "measured_soh_pct": 77.32,
+  "predicted_soh_pct": 68.926
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 90,
+  "measured_soh_pct": 75.735,
+  "predicted_soh_pct": 72.241
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 91,
+  "measured_soh_pct": 74.949,
+  "predicted_soh_pct": 71.196
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 92,
+  "measured_soh_pct": 74.156,
+  "predicted_soh_pct": 70.154
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 93,
+  "measured_soh_pct": 73.648,
+  "predicted_soh_pct": 69.255
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 94,
+  "measured_soh_pct": 73.138,
+  "predicted_soh_pct": 68.71
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 95,
+  "measured_soh_pct": 72.592,
+  "predicted_soh_pct": 68.043
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 96,
+  "measured_soh_pct": 72.343,
+  "predicted_soh_pct": 67.607
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 97,
+  "measured_soh_pct": 72.069,
+  "predicted_soh_pct": 67.38
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 98,
+  "measured_soh_pct": 71.561,
+  "predicted_soh_pct": 67.234
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 99,
+  "measured_soh_pct": 71.301,
+  "predicted_soh_pct": 67.169
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 100,
+  "measured_soh_pct": 71.024,
+  "predicted_soh_pct": 65.781
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 101,
+  "measured_soh_pct": 71.035,
+  "predicted_soh_pct": 66.204
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 102,
+  "measured_soh_pct": 72.613,
+  "predicted_soh_pct": 65.783
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 103,
+  "measured_soh_pct": 71.578,
+  "predicted_soh_pct": 67.205
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 104,
+  "measured_soh_pct": 70.751,
+  "predicted_soh_pct": 66.454
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 105,
+  "measured_soh_pct": 70.487,
+  "predicted_soh_pct": 66.159
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 106,
+  "measured_soh_pct": 70.246,
+  "predicted_soh_pct": 66.203
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 107,
+  "measured_soh_pct": 69.758,
+  "predicted_soh_pct": 65.807
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 108,
+  "measured_soh_pct": 69.727,
+  "predicted_soh_pct": 65.443
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 109,
+  "measured_soh_pct": 69.466,
+  "predicted_soh_pct": 65.455
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 110,
+  "measured_soh_pct": 69.192,
+  "predicted_soh_pct": 64.639
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 111,
+  "measured_soh_pct": 68.684,
+  "predicted_soh_pct": 65.334
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 112,
+  "measured_soh_pct": 68.93,
+  "predicted_soh_pct": 64.212
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 113,
+  "measured_soh_pct": 68.688,
+  "predicted_soh_pct": 64.277
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 114,
+  "measured_soh_pct": 68.413,
+  "predicted_soh_pct": 64.838
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 115,
+  "measured_soh_pct": 68.165,
+  "predicted_soh_pct": 64.548
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 116,
+  "measured_soh_pct": 67.905,
+  "predicted_soh_pct": 63.808
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 117,
+  "measured_soh_pct": 67.663,
+  "predicted_soh_pct": 63.514
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 118,
+  "measured_soh_pct": 69.208,
+  "predicted_soh_pct": 64.037
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 119,
+  "measured_soh_pct": 70.257,
+  "predicted_soh_pct": 65.079
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 120,
+  "measured_soh_pct": 68.936,
+  "predicted_soh_pct": 65.993
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 121,
+  "measured_soh_pct": 68.413,
+  "predicted_soh_pct": 64.973
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 122,
+  "measured_soh_pct": 67.866,
+  "predicted_soh_pct": 64.145
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 123,
+  "measured_soh_pct": 67.625,
+  "predicted_soh_pct": 63.871
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 124,
+  "measured_soh_pct": 67.371,
+  "predicted_soh_pct": 63.518
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 125,
+  "measured_soh_pct": 66.85,
+  "predicted_soh_pct": 63.601
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 126,
+  "measured_soh_pct": 66.562,
+  "predicted_soh_pct": 63.415
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 127,
+  "measured_soh_pct": 66.296,
+  "predicted_soh_pct": 62.984
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 128,
+  "measured_soh_pct": 66.079,
+  "predicted_soh_pct": 62.897
+ },
+ {
+  "cell_id": "B0006",
+  "cycle": 129,
+  "measured_soh_pct": 66.301,
+  "predicted_soh_pct": 64.667
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 2,
+  "measured_soh_pct": 94.032,
+  "predicted_soh_pct": 93.917
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 3,
+  "measured_soh_pct": 94.033,
+  "predicted_soh_pct": 92.342
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 4,
+  "measured_soh_pct": 94.038,
+  "predicted_soh_pct": 92.129
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 5,
+  "measured_soh_pct": 93.972,
+  "predicted_soh_pct": 92.276
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 6,
+  "measured_soh_pct": 94.035,
+  "predicted_soh_pct": 92.186
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 7,
+  "measured_soh_pct": 93.997,
+  "predicted_soh_pct": 92.069
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 8,
+  "measured_soh_pct": 94.075,
+  "predicted_soh_pct": 90.479
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 9,
+  "measured_soh_pct": 93.484,
+  "predicted_soh_pct": 91.381
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 10,
+  "measured_soh_pct": 93.503,
+  "predicted_soh_pct": 90.501
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 11,
+  "measured_soh_pct": 93.502,
+  "predicted_soh_pct": 90.722
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 12,
+  "measured_soh_pct": 92.983,
+  "predicted_soh_pct": 86.256
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 13,
+  "measured_soh_pct": 92.954,
+  "predicted_soh_pct": 90.289
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 14,
+  "measured_soh_pct": 92.95,
+  "predicted_soh_pct": 89.968
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 15,
+  "measured_soh_pct": 92.968,
+  "predicted_soh_pct": 90.937
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 16,
+  "measured_soh_pct": 92.937,
+  "predicted_soh_pct": 89.736
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 17,
+  "measured_soh_pct": 92.391,
+  "predicted_soh_pct": 89.664
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 18,
+  "measured_soh_pct": 92.426,
+  "predicted_soh_pct": 89.164
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 19,
+  "measured_soh_pct": 92.419,
+  "predicted_soh_pct": 89.006
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 20,
+  "measured_soh_pct": 94.039,
+  "predicted_soh_pct": 93.691
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 21,
+  "measured_soh_pct": 94.074,
+  "predicted_soh_pct": 94.977
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 22,
+  "measured_soh_pct": 94.055,
+  "predicted_soh_pct": 93.187
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 23,
+  "measured_soh_pct": 93.55,
+  "predicted_soh_pct": 92.733
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 24,
+  "measured_soh_pct": 93.51,
+  "predicted_soh_pct": 92.909
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 25,
+  "measured_soh_pct": 93.534,
+  "predicted_soh_pct": 92.998
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 26,
+  "measured_soh_pct": 92.981,
+  "predicted_soh_pct": 92.699
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 27,
+  "measured_soh_pct": 93.002,
+  "predicted_soh_pct": 92.426
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 28,
+  "measured_soh_pct": 92.958,
+  "predicted_soh_pct": 92.32
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 29,
+  "measured_soh_pct": 92.407,
+  "predicted_soh_pct": 91.547
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 30,
+  "measured_soh_pct": 92.46,
+  "predicted_soh_pct": 91.547
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 31,
+  "measured_soh_pct": 93.141,
+  "predicted_soh_pct": 92.438
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 32,
+  "measured_soh_pct": 92.604,
+  "predicted_soh_pct": 91.667
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 33,
+  "measured_soh_pct": 92.347,
+  "predicted_soh_pct": 91.696
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 34,
+  "measured_soh_pct": 91.841,
+  "predicted_soh_pct": 91.416
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 35,
+  "measured_soh_pct": 91.858,
+  "predicted_soh_pct": 91.173
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 36,
+  "measured_soh_pct": 91.584,
+  "predicted_soh_pct": 90.712
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 37,
+  "measured_soh_pct": 91.057,
+  "predicted_soh_pct": 90.827
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 38,
+  "measured_soh_pct": 90.825,
+  "predicted_soh_pct": 90.572
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 39,
+  "measured_soh_pct": 90.569,
+  "predicted_soh_pct": 90.486
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 40,
+  "measured_soh_pct": 90.58,
+  "predicted_soh_pct": 89.911
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 41,
+  "measured_soh_pct": 90.303,
+  "predicted_soh_pct": 90.662
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 42,
+  "measured_soh_pct": 90.66,
+  "predicted_soh_pct": 88.865
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 43,
+  "measured_soh_pct": 90.313,
+  "predicted_soh_pct": 90.436
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 44,
+  "measured_soh_pct": 89.792,
+  "predicted_soh_pct": 89.744
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 45,
+  "measured_soh_pct": 89.294,
+  "predicted_soh_pct": 89.169
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 46,
+  "measured_soh_pct": 89.016,
+  "predicted_soh_pct": 89.316
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 47,
+  "measured_soh_pct": 90.754,
+  "predicted_soh_pct": 89.666
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 48,
+  "measured_soh_pct": 90.785,
+  "predicted_soh_pct": 90.645
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 49,
+  "measured_soh_pct": 90.012,
+  "predicted_soh_pct": 89.582
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 50,
+  "measured_soh_pct": 89.522,
+  "predicted_soh_pct": 89.49
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 51,
+  "measured_soh_pct": 89.017,
+  "predicted_soh_pct": 89.825
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 52,
+  "measured_soh_pct": 88.766,
+  "predicted_soh_pct": 88.129
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 53,
+  "measured_soh_pct": 88.513,
+  "predicted_soh_pct": 89.087
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 54,
+  "measured_soh_pct": 88.004,
+  "predicted_soh_pct": 88.015
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 55,
+  "measured_soh_pct": 87.482,
+  "predicted_soh_pct": 88.303
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 56,
+  "measured_soh_pct": 87.483,
+  "predicted_soh_pct": 88.037
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 57,
+  "measured_soh_pct": 87.251,
+  "predicted_soh_pct": 87.44
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 58,
+  "measured_soh_pct": 86.982,
+  "predicted_soh_pct": 87.172
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 59,
+  "measured_soh_pct": 86.428,
+  "predicted_soh_pct": 87.405
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 60,
+  "measured_soh_pct": 86.195,
+  "predicted_soh_pct": 87.008
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 61,
+  "measured_soh_pct": 85.699,
+  "predicted_soh_pct": 86.376
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 62,
+  "measured_soh_pct": 85.698,
+  "predicted_soh_pct": 86.058
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 63,
+  "measured_soh_pct": 85.183,
+  "predicted_soh_pct": 85.984
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 64,
+  "measured_soh_pct": 85.201,
+  "predicted_soh_pct": 86.085
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 65,
+  "measured_soh_pct": 84.679,
+  "predicted_soh_pct": 86.033
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 66,
+  "measured_soh_pct": 84.383,
+  "predicted_soh_pct": 85.35
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 67,
+  "measured_soh_pct": 84.154,
+  "predicted_soh_pct": 85.174
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 68,
+  "measured_soh_pct": 83.896,
+  "predicted_soh_pct": 84.771
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 69,
+  "measured_soh_pct": 83.66,
+  "predicted_soh_pct": 84.003
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 70,
+  "measured_soh_pct": 83.372,
+  "predicted_soh_pct": 85.001
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 71,
+  "measured_soh_pct": 83.113,
+  "predicted_soh_pct": 83.879
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 72,
+  "measured_soh_pct": 82.871,
+  "predicted_soh_pct": 83.61
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 73,
+  "measured_soh_pct": 82.627,
+  "predicted_soh_pct": 83.415
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 74,
+  "measured_soh_pct": 82.361,
+  "predicted_soh_pct": 84.018
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 75,
+  "measured_soh_pct": 81.821,
+  "predicted_soh_pct": 83.327
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 76,
+  "measured_soh_pct": 81.813,
+  "predicted_soh_pct": 82.976
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 77,
+  "measured_soh_pct": 82.056,
+  "predicted_soh_pct": 82.883
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 78,
+  "measured_soh_pct": 81.579,
+  "predicted_soh_pct": 83.148
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 79,
+  "measured_soh_pct": 81.061,
+  "predicted_soh_pct": 82.432
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 80,
+  "measured_soh_pct": 80.821,
+  "predicted_soh_pct": 81.59
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 81,
+  "measured_soh_pct": 80.791,
+  "predicted_soh_pct": 82.356
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 82,
+  "measured_soh_pct": 80.836,
+  "predicted_soh_pct": 81.732
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 83,
+  "measured_soh_pct": 80.543,
+  "predicted_soh_pct": 81.601
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 84,
+  "measured_soh_pct": 80.033,
+  "predicted_soh_pct": 81.304
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 85,
+  "measured_soh_pct": 79.796,
+  "predicted_soh_pct": 80.762
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 86,
+  "measured_soh_pct": 79.811,
+  "predicted_soh_pct": 81.365
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 87,
+  "measured_soh_pct": 79.79,
+  "predicted_soh_pct": 80.896
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 88,
+  "measured_soh_pct": 79.532,
+  "predicted_soh_pct": 80.513
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 89,
+  "measured_soh_pct": 81.3,
+  "predicted_soh_pct": 82.909
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 90,
+  "measured_soh_pct": 80.787,
+  "predicted_soh_pct": 82.174
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 91,
+  "measured_soh_pct": 80.283,
+  "predicted_soh_pct": 82.238
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 92,
+  "measured_soh_pct": 79.749,
+  "predicted_soh_pct": 81.25
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 93,
+  "measured_soh_pct": 79.52,
+  "predicted_soh_pct": 81.004
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 94,
+  "measured_soh_pct": 79.268,
+  "predicted_soh_pct": 80.76
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 95,
+  "measured_soh_pct": 78.999,
+  "predicted_soh_pct": 80.576
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 96,
+  "measured_soh_pct": 78.761,
+  "predicted_soh_pct": 80.493
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 97,
+  "measured_soh_pct": 78.49,
+  "predicted_soh_pct": 79.834
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 98,
+  "measured_soh_pct": 78.513,
+  "predicted_soh_pct": 79.752
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 99,
+  "measured_soh_pct": 78.263,
+  "predicted_soh_pct": 80.231
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 100,
+  "measured_soh_pct": 77.982,
+  "predicted_soh_pct": 79.97
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 101,
+  "measured_soh_pct": 78.249,
+  "predicted_soh_pct": 79.316
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 102,
+  "measured_soh_pct": 78.749,
+  "predicted_soh_pct": 80.081
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 103,
+  "measured_soh_pct": 78.264,
+  "predicted_soh_pct": 79.783
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 104,
+  "measured_soh_pct": 77.988,
+  "predicted_soh_pct": 79.752
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 105,
+  "measured_soh_pct": 77.495,
+  "predicted_soh_pct": 79.205
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 106,
+  "measured_soh_pct": 77.194,
+  "predicted_soh_pct": 79.492
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 107,
+  "measured_soh_pct": 77.251,
+  "predicted_soh_pct": 78.689
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 108,
+  "measured_soh_pct": 77.23,
+  "predicted_soh_pct": 78.454
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 109,
+  "measured_soh_pct": 76.715,
+  "predicted_soh_pct": 78.632
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 110,
+  "measured_soh_pct": 76.438,
+  "predicted_soh_pct": 78.404
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 111,
+  "measured_soh_pct": 76.446,
+  "predicted_soh_pct": 78.178
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 112,
+  "measured_soh_pct": 76.455,
+  "predicted_soh_pct": 77.954
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 113,
+  "measured_soh_pct": 76.195,
+  "predicted_soh_pct": 77.79
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 114,
+  "measured_soh_pct": 75.933,
+  "predicted_soh_pct": 77.921
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 115,
+  "measured_soh_pct": 75.682,
+  "predicted_soh_pct": 77.346
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 116,
+  "measured_soh_pct": 75.68,
+  "predicted_soh_pct": 77.212
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 117,
+  "measured_soh_pct": 75.697,
+  "predicted_soh_pct": 76.978
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 118,
+  "measured_soh_pct": 76.698,
+  "predicted_soh_pct": 76.923
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 119,
+  "measured_soh_pct": 76.957,
+  "predicted_soh_pct": 78.941
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 120,
+  "measured_soh_pct": 76.181,
+  "predicted_soh_pct": 78.687
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 121,
+  "measured_soh_pct": 75.679,
+  "predicted_soh_pct": 77.259
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 122,
+  "measured_soh_pct": 75.389,
+  "predicted_soh_pct": 77.269
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 123,
+  "measured_soh_pct": 75.16,
+  "predicted_soh_pct": 76.823
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 124,
+  "measured_soh_pct": 74.891,
+  "predicted_soh_pct": 76.915
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 125,
+  "measured_soh_pct": 74.642,
+  "predicted_soh_pct": 76.161
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 126,
+  "measured_soh_pct": 74.621,
+  "predicted_soh_pct": 76.402
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 127,
+  "measured_soh_pct": 74.374,
+  "predicted_soh_pct": 76.0
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 128,
+  "measured_soh_pct": 74.127,
+  "predicted_soh_pct": 75.755
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 129,
+  "measured_soh_pct": 74.139,
+  "predicted_soh_pct": 76.101
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 130,
+  "measured_soh_pct": 73.849,
+  "predicted_soh_pct": 75.24
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 131,
+  "measured_soh_pct": 74.095,
+  "predicted_soh_pct": 75.707
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 132,
+  "measured_soh_pct": 74.907,
+  "predicted_soh_pct": 76.151
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 133,
+  "measured_soh_pct": 74.104,
+  "predicted_soh_pct": 76.212
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 134,
+  "measured_soh_pct": 73.856,
+  "predicted_soh_pct": 75.684
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 135,
+  "measured_soh_pct": 73.604,
+  "predicted_soh_pct": 75.334
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 136,
+  "measured_soh_pct": 73.612,
+  "predicted_soh_pct": 75.044
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 137,
+  "measured_soh_pct": 73.35,
+  "predicted_soh_pct": 74.91
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 138,
+  "measured_soh_pct": 73.088,
+  "predicted_soh_pct": 75.128
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 139,
+  "measured_soh_pct": 72.835,
+  "predicted_soh_pct": 74.824
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 140,
+  "measured_soh_pct": 72.568,
+  "predicted_soh_pct": 74.757
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 141,
+  "measured_soh_pct": 72.581,
+  "predicted_soh_pct": 74.813
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 142,
+  "measured_soh_pct": 72.341,
+  "predicted_soh_pct": 74.406
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 143,
+  "measured_soh_pct": 72.338,
+  "predicted_soh_pct": 73.93
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 144,
+  "measured_soh_pct": 72.069,
+  "predicted_soh_pct": 73.871
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 145,
+  "measured_soh_pct": 71.812,
+  "predicted_soh_pct": 73.553
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 146,
+  "measured_soh_pct": 71.841,
+  "predicted_soh_pct": 73.248
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 147,
+  "measured_soh_pct": 71.815,
+  "predicted_soh_pct": 73.481
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 148,
+  "measured_soh_pct": 72.093,
+  "predicted_soh_pct": 73.179
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 149,
+  "measured_soh_pct": 73.36,
+  "predicted_soh_pct": 74.167
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 150,
+  "measured_soh_pct": 72.593,
+  "predicted_soh_pct": 74.936
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 151,
+  "measured_soh_pct": 72.357,
+  "predicted_soh_pct": 74.292
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 152,
+  "measured_soh_pct": 72.09,
+  "predicted_soh_pct": 73.917
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 153,
+  "measured_soh_pct": 71.582,
+  "predicted_soh_pct": 73.353
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 154,
+  "measured_soh_pct": 71.59,
+  "predicted_soh_pct": 73.285
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 155,
+  "measured_soh_pct": 71.313,
+  "predicted_soh_pct": 73.729
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 156,
+  "measured_soh_pct": 71.304,
+  "predicted_soh_pct": 73.322
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 157,
+  "measured_soh_pct": 71.063,
+  "predicted_soh_pct": 73.513
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 158,
+  "measured_soh_pct": 70.816,
+  "predicted_soh_pct": 73.127
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 159,
+  "measured_soh_pct": 70.829,
+  "predicted_soh_pct": 72.542
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 160,
+  "measured_soh_pct": 70.542,
+  "predicted_soh_pct": 72.663
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 161,
+  "measured_soh_pct": 70.55,
+  "predicted_soh_pct": 72.282
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 162,
+  "measured_soh_pct": 70.309,
+  "predicted_soh_pct": 72.124
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 163,
+  "measured_soh_pct": 70.317,
+  "predicted_soh_pct": 72.495
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 164,
+  "measured_soh_pct": 70.023,
+  "predicted_soh_pct": 72.012
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 165,
+  "measured_soh_pct": 71.089,
+  "predicted_soh_pct": 71.979
+ },
+ {
+  "cell_id": "B0007",
+  "cycle": 166,
+  "measured_soh_pct": 71.623,
+  "predicted_soh_pct": 73.811
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 1,
+  "measured_soh_pct": 92.16,
+  "predicted_soh_pct": 94.099
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 2,
+  "measured_soh_pct": 91.98,
+  "predicted_soh_pct": 91.602
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 3,
+  "measured_soh_pct": 91.534,
+  "predicted_soh_pct": 91.554
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 4,
+  "measured_soh_pct": 91.635,
+  "predicted_soh_pct": 91.145
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 5,
+  "measured_soh_pct": 91.426,
+  "predicted_soh_pct": 87.107
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 6,
+  "measured_soh_pct": 91.06,
+  "predicted_soh_pct": 86.842
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 7,
+  "measured_soh_pct": 90.758,
+  "predicted_soh_pct": 86.364
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 8,
+  "measured_soh_pct": 90.215,
+  "predicted_soh_pct": 86.407
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 9,
+  "measured_soh_pct": 91.155,
+  "predicted_soh_pct": 90.353
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 10,
+  "measured_soh_pct": 90.606,
+  "predicted_soh_pct": 86.963
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 11,
+  "measured_soh_pct": 90.235,
+  "predicted_soh_pct": 86.212
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 12,
+  "measured_soh_pct": 89.542,
+  "predicted_soh_pct": 86.619
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 13,
+  "measured_soh_pct": 89.174,
+  "predicted_soh_pct": 85.772
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 14,
+  "measured_soh_pct": 89.047,
+  "predicted_soh_pct": 88.533
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 15,
+  "measured_soh_pct": 88.561,
+  "predicted_soh_pct": 84.851
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 16,
+  "measured_soh_pct": 88.431,
+  "predicted_soh_pct": 84.786
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 17,
+  "measured_soh_pct": 87.681,
+  "predicted_soh_pct": 84.028
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 18,
+  "measured_soh_pct": 87.311,
+  "predicted_soh_pct": 84.356
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 19,
+  "measured_soh_pct": 86.883,
+  "predicted_soh_pct": 87.542
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 20,
+  "measured_soh_pct": 86.576,
+  "predicted_soh_pct": 83.312
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 21,
+  "measured_soh_pct": 85.43,
+  "predicted_soh_pct": 83.242
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 22,
+  "measured_soh_pct": 85.573,
+  "predicted_soh_pct": 83.014
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 23,
+  "measured_soh_pct": 85.375,
+  "predicted_soh_pct": 82.695
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 24,
+  "measured_soh_pct": 87.462,
+  "predicted_soh_pct": 86.157
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 25,
+  "measured_soh_pct": 86.638,
+  "predicted_soh_pct": 83.384
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 26,
+  "measured_soh_pct": 86.112,
+  "predicted_soh_pct": 82.386
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 27,
+  "measured_soh_pct": 85.592,
+  "predicted_soh_pct": 82.325
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 28,
+  "measured_soh_pct": 84.963,
+  "predicted_soh_pct": 81.875
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 29,
+  "measured_soh_pct": 84.702,
+  "predicted_soh_pct": 84.526
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 30,
+  "measured_soh_pct": 84.095,
+  "predicted_soh_pct": 81.255
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 31,
+  "measured_soh_pct": 83.849,
+  "predicted_soh_pct": 80.437
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 32,
+  "measured_soh_pct": 83.276,
+  "predicted_soh_pct": 80.546
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 33,
+  "measured_soh_pct": 82.86,
+  "predicted_soh_pct": 80.128
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 34,
+  "measured_soh_pct": 82.411,
+  "predicted_soh_pct": 82.705
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 35,
+  "measured_soh_pct": 81.939,
+  "predicted_soh_pct": 79.325
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 36,
+  "measured_soh_pct": 81.382,
+  "predicted_soh_pct": 79.419
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 37,
+  "measured_soh_pct": 81.108,
+  "predicted_soh_pct": 79.123
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 38,
+  "measured_soh_pct": 80.7,
+  "predicted_soh_pct": 78.419
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 39,
+  "measured_soh_pct": 83.803,
+  "predicted_soh_pct": 81.787
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 40,
+  "measured_soh_pct": 82.465,
+  "predicted_soh_pct": 81.24
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 41,
+  "measured_soh_pct": 81.619,
+  "predicted_soh_pct": 79.599
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 42,
+  "measured_soh_pct": 80.821,
+  "predicted_soh_pct": 78.969
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 43,
+  "measured_soh_pct": 80.545,
+  "predicted_soh_pct": 78.758
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 44,
+  "measured_soh_pct": 79.773,
+  "predicted_soh_pct": 80.947
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 45,
+  "measured_soh_pct": 85.828,
+  "predicted_soh_pct": 82.471
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 46,
+  "measured_soh_pct": 84.791,
+  "predicted_soh_pct": 82.176
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 47,
+  "measured_soh_pct": 83.889,
+  "predicted_soh_pct": 81.898
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 48,
+  "measured_soh_pct": 83.033,
+  "predicted_soh_pct": 81.288
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 49,
+  "measured_soh_pct": 83.32,
+  "predicted_soh_pct": 83.812
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 50,
+  "measured_soh_pct": 82.342,
+  "predicted_soh_pct": 80.055
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 51,
+  "measured_soh_pct": 81.288,
+  "predicted_soh_pct": 79.994
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 52,
+  "measured_soh_pct": 80.608,
+  "predicted_soh_pct": 79.793
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 53,
+  "measured_soh_pct": 80.287,
+  "predicted_soh_pct": 78.855
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 54,
+  "measured_soh_pct": 82.022,
+  "predicted_soh_pct": 80.495
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 55,
+  "measured_soh_pct": 80.663,
+  "predicted_soh_pct": 79.454
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 56,
+  "measured_soh_pct": 79.605,
+  "predicted_soh_pct": 80.112
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 57,
+  "measured_soh_pct": 79.33,
+  "predicted_soh_pct": 77.526
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 58,
+  "measured_soh_pct": 79.004,
+  "predicted_soh_pct": 79.557
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 59,
+  "measured_soh_pct": 78.209,
+  "predicted_soh_pct": 77.479
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 60,
+  "measured_soh_pct": 77.781,
+  "predicted_soh_pct": 76.747
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 61,
+  "measured_soh_pct": 77.01,
+  "predicted_soh_pct": 76.119
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 62,
+  "measured_soh_pct": 76.608,
+  "predicted_soh_pct": 77.102
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 63,
+  "measured_soh_pct": 76.581,
+  "predicted_soh_pct": 77.056
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 64,
+  "measured_soh_pct": 76.113,
+  "predicted_soh_pct": 75.314
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 65,
+  "measured_soh_pct": 75.326,
+  "predicted_soh_pct": 75.622
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 66,
+  "measured_soh_pct": 75.071,
+  "predicted_soh_pct": 74.267
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 67,
+  "measured_soh_pct": 74.818,
+  "predicted_soh_pct": 74.579
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 68,
+  "measured_soh_pct": 76.671,
+  "predicted_soh_pct": 75.275
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 69,
+  "measured_soh_pct": 76.192,
+  "predicted_soh_pct": 74.597
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 70,
+  "measured_soh_pct": 75.06,
+  "predicted_soh_pct": 74.75
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 71,
+  "measured_soh_pct": 74.621,
+  "predicted_soh_pct": 74.141
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 72,
+  "measured_soh_pct": 74.166,
+  "predicted_soh_pct": 74.938
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 73,
+  "measured_soh_pct": 74.037,
+  "predicted_soh_pct": 74.486
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 74,
+  "measured_soh_pct": 73.675,
+  "predicted_soh_pct": 73.354
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 75,
+  "measured_soh_pct": 73.401,
+  "predicted_soh_pct": 72.548
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 76,
+  "measured_soh_pct": 72.905,
+  "predicted_soh_pct": 72.761
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 77,
+  "measured_soh_pct": 72.393,
+  "predicted_soh_pct": 73.233
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 78,
+  "measured_soh_pct": 72.639,
+  "predicted_soh_pct": 72.486
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 79,
+  "measured_soh_pct": 72.127,
+  "predicted_soh_pct": 72.19
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 80,
+  "measured_soh_pct": 71.964,
+  "predicted_soh_pct": 72.084
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 81,
+  "measured_soh_pct": 71.432,
+  "predicted_soh_pct": 71.385
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 82,
+  "measured_soh_pct": 71.245,
+  "predicted_soh_pct": 72.595
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 83,
+  "measured_soh_pct": 73.491,
+  "predicted_soh_pct": 71.159
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 84,
+  "measured_soh_pct": 72.629,
+  "predicted_soh_pct": 73.482
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 85,
+  "measured_soh_pct": 72.142,
+  "predicted_soh_pct": 72.159
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 86,
+  "measured_soh_pct": 71.419,
+  "predicted_soh_pct": 71.435
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 87,
+  "measured_soh_pct": 70.773,
+  "predicted_soh_pct": 71.286
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 88,
+  "measured_soh_pct": 72.729,
+  "predicted_soh_pct": 70.136
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 89,
+  "measured_soh_pct": 71.416,
+  "predicted_soh_pct": 72.178
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 90,
+  "measured_soh_pct": 70.985,
+  "predicted_soh_pct": 71.615
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 91,
+  "measured_soh_pct": 70.778,
+  "predicted_soh_pct": 71.908
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 92,
+  "measured_soh_pct": 70.284,
+  "predicted_soh_pct": 70.885
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 93,
+  "measured_soh_pct": 70.422,
+  "predicted_soh_pct": 70.913
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 94,
+  "measured_soh_pct": 69.843,
+  "predicted_soh_pct": 71.414
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 95,
+  "measured_soh_pct": 69.678,
+  "predicted_soh_pct": 72.024
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 96,
+  "measured_soh_pct": 69.468,
+  "predicted_soh_pct": 71.009
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 97,
+  "measured_soh_pct": 68.928,
+  "predicted_soh_pct": 70.098
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 98,
+  "measured_soh_pct": 69.245,
+  "predicted_soh_pct": 70.087
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 99,
+  "measured_soh_pct": 68.516,
+  "predicted_soh_pct": 71.592
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 100,
+  "measured_soh_pct": 68.667,
+  "predicted_soh_pct": 71.265
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 101,
+  "measured_soh_pct": 68.397,
+  "predicted_soh_pct": 70.634
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 102,
+  "measured_soh_pct": 67.836,
+  "predicted_soh_pct": 69.533
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 103,
+  "measured_soh_pct": 73.022,
+  "predicted_soh_pct": 69.704
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 104,
+  "measured_soh_pct": 72.505,
+  "predicted_soh_pct": 71.927
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 105,
+  "measured_soh_pct": 71.907,
+  "predicted_soh_pct": 71.934
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 106,
+  "measured_soh_pct": 71.418,
+  "predicted_soh_pct": 71.575
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 107,
+  "measured_soh_pct": 70.739,
+  "predicted_soh_pct": 71.294
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 108,
+  "measured_soh_pct": 70.695,
+  "predicted_soh_pct": 71.523
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 109,
+  "measured_soh_pct": 69.947,
+  "predicted_soh_pct": 70.69
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 110,
+  "measured_soh_pct": 69.767,
+  "predicted_soh_pct": 71.21
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 111,
+  "measured_soh_pct": 69.502,
+  "predicted_soh_pct": 70.579
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 112,
+  "measured_soh_pct": 69.301,
+  "predicted_soh_pct": 70.84
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 113,
+  "measured_soh_pct": 69.411,
+  "predicted_soh_pct": 70.528
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 114,
+  "measured_soh_pct": 68.809,
+  "predicted_soh_pct": 70.466
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 115,
+  "measured_soh_pct": 68.236,
+  "predicted_soh_pct": 70.186
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 116,
+  "measured_soh_pct": 67.949,
+  "predicted_soh_pct": 70.756
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 117,
+  "measured_soh_pct": 67.311,
+  "predicted_soh_pct": 69.942
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 118,
+  "measured_soh_pct": 71.342,
+  "predicted_soh_pct": 68.11
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 119,
+  "measured_soh_pct": 70.322,
+  "predicted_soh_pct": 71.74
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 120,
+  "measured_soh_pct": 69.674,
+  "predicted_soh_pct": 71.31
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 121,
+  "measured_soh_pct": 69.412,
+  "predicted_soh_pct": 70.128
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 122,
+  "measured_soh_pct": 68.509,
+  "predicted_soh_pct": 71.157
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 123,
+  "measured_soh_pct": 68.985,
+  "predicted_soh_pct": 70.669
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 124,
+  "measured_soh_pct": 68.433,
+  "predicted_soh_pct": 69.061
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 125,
+  "measured_soh_pct": 68.137,
+  "predicted_soh_pct": 70.393
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 126,
+  "measured_soh_pct": 68.17,
+  "predicted_soh_pct": 70.322
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 127,
+  "measured_soh_pct": 67.593,
+  "predicted_soh_pct": 69.604
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 128,
+  "measured_soh_pct": 67.74,
+  "predicted_soh_pct": 69.598
+ },
+ {
+  "cell_id": "B0018",
+  "cycle": 129,
+  "measured_soh_pct": 67.053,
+  "predicted_soh_pct": 69.229
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 1,
+  "measured_soh_pct": 90.055,
+  "predicted_soh_pct": 89.771
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 2,
+  "measured_soh_pct": 90.221,
+  "predicted_soh_pct": 82.817
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 3,
+  "measured_soh_pct": 90.219,
+  "predicted_soh_pct": 83.391
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 4,
+  "measured_soh_pct": 89.946,
+  "predicted_soh_pct": 82.123
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 5,
+  "measured_soh_pct": 89.65,
+  "predicted_soh_pct": 81.546
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 6,
+  "measured_soh_pct": 89.427,
+  "predicted_soh_pct": 86.112
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 7,
+  "measured_soh_pct": 89.454,
+  "predicted_soh_pct": 81.352
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 8,
+  "measured_soh_pct": 89.466,
+  "predicted_soh_pct": 80.847
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 9,
+  "measured_soh_pct": 89.304,
+  "predicted_soh_pct": 80.617
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 10,
+  "measured_soh_pct": 89.182,
+  "predicted_soh_pct": 80.825
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 11,
+  "measured_soh_pct": 89.149,
+  "predicted_soh_pct": 85.241
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 12,
+  "measured_soh_pct": 89.069,
+  "predicted_soh_pct": 80.974
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 13,
+  "measured_soh_pct": 88.927,
+  "predicted_soh_pct": 79.828
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 14,
+  "measured_soh_pct": 88.795,
+  "predicted_soh_pct": 79.458
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 15,
+  "measured_soh_pct": 88.902,
+  "predicted_soh_pct": 79.967
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 16,
+  "measured_soh_pct": 89.15,
+  "predicted_soh_pct": 85.999
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 17,
+  "measured_soh_pct": 89.415,
+  "predicted_soh_pct": 81.631
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 18,
+  "measured_soh_pct": 88.965,
+  "predicted_soh_pct": 81.972
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 19,
+  "measured_soh_pct": 88.546,
+  "predicted_soh_pct": 80.442
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 20,
+  "measured_soh_pct": 88.295,
+  "predicted_soh_pct": 80.539
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 21,
+  "measured_soh_pct": 89.135,
+  "predicted_soh_pct": 85.354
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 22,
+  "measured_soh_pct": 89.823,
+  "predicted_soh_pct": 90.082
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 23,
+  "measured_soh_pct": 89.545,
+  "predicted_soh_pct": 89.028
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 24,
+  "measured_soh_pct": 89.259,
+  "predicted_soh_pct": 87.951
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 25,
+  "measured_soh_pct": 89.057,
+  "predicted_soh_pct": 87.674
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 26,
+  "measured_soh_pct": 88.778,
+  "predicted_soh_pct": 88.34
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 27,
+  "measured_soh_pct": 88.844,
+  "predicted_soh_pct": 88.547
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 28,
+  "measured_soh_pct": 88.565,
+  "predicted_soh_pct": 88.577
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 29,
+  "measured_soh_pct": 88.567,
+  "predicted_soh_pct": 87.666
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 30,
+  "measured_soh_pct": 88.304,
+  "predicted_soh_pct": 87.589
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 31,
+  "measured_soh_pct": 87.964,
+  "predicted_soh_pct": 87.483
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 32,
+  "measured_soh_pct": 88.052,
+  "predicted_soh_pct": 88.727
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 33,
+  "measured_soh_pct": 88.012,
+  "predicted_soh_pct": 87.547
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 34,
+  "measured_soh_pct": 87.779,
+  "predicted_soh_pct": 87.363
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 35,
+  "measured_soh_pct": 87.728,
+  "predicted_soh_pct": 87.397
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 36,
+  "measured_soh_pct": 87.496,
+  "predicted_soh_pct": 86.741
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 37,
+  "measured_soh_pct": 88.051,
+  "predicted_soh_pct": 88.041
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 38,
+  "measured_soh_pct": 88.121,
+  "predicted_soh_pct": 89.694
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 39,
+  "measured_soh_pct": 87.681,
+  "predicted_soh_pct": 89.0
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 40,
+  "measured_soh_pct": 87.31,
+  "predicted_soh_pct": 87.3
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 41,
+  "measured_soh_pct": 87.031,
+  "predicted_soh_pct": 86.584
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 42,
+  "measured_soh_pct": 87.534,
+  "predicted_soh_pct": 86.78
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 43,
+  "measured_soh_pct": 88.256,
+  "predicted_soh_pct": 90.331
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 44,
+  "measured_soh_pct": 88.159,
+  "predicted_soh_pct": 89.003
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 46,
+  "measured_soh_pct": 88.268,
+  "predicted_soh_pct": 90.926
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 47,
+  "measured_soh_pct": 87.859,
+  "predicted_soh_pct": 88.502
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 48,
+  "measured_soh_pct": 87.869,
+  "predicted_soh_pct": 87.935
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 49,
+  "measured_soh_pct": 88.087,
+  "predicted_soh_pct": 87.233
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 50,
+  "measured_soh_pct": 88.034,
+  "predicted_soh_pct": 88.722
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 51,
+  "measured_soh_pct": 88.034,
+  "predicted_soh_pct": 90.005
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 52,
+  "measured_soh_pct": 87.648,
+  "predicted_soh_pct": 88.752
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 53,
+  "measured_soh_pct": 87.527,
+  "predicted_soh_pct": 88.546
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 54,
+  "measured_soh_pct": 87.504,
+  "predicted_soh_pct": 87.586
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 55,
+  "measured_soh_pct": 87.33,
+  "predicted_soh_pct": 88.801
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 56,
+  "measured_soh_pct": 87.681,
+  "predicted_soh_pct": 88.654
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 57,
+  "measured_soh_pct": 87.536,
+  "predicted_soh_pct": 89.159
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 58,
+  "measured_soh_pct": 87.165,
+  "predicted_soh_pct": 88.611
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 59,
+  "measured_soh_pct": 86.683,
+  "predicted_soh_pct": 85.981
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 60,
+  "measured_soh_pct": 86.596,
+  "predicted_soh_pct": 86.961
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 61,
+  "measured_soh_pct": 87.143,
+  "predicted_soh_pct": 86.674
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 62,
+  "measured_soh_pct": 87.165,
+  "predicted_soh_pct": 88.274
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 63,
+  "measured_soh_pct": 86.926,
+  "predicted_soh_pct": 88.37
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 64,
+  "measured_soh_pct": 86.478,
+  "predicted_soh_pct": 87.584
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 65,
+  "measured_soh_pct": 86.365,
+  "predicted_soh_pct": 86.299
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 66,
+  "measured_soh_pct": 87.247,
+  "predicted_soh_pct": 86.273
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 67,
+  "measured_soh_pct": 88.212,
+  "predicted_soh_pct": 89.765
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 68,
+  "measured_soh_pct": 87.524,
+  "predicted_soh_pct": 88.75
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 69,
+  "measured_soh_pct": 87.214,
+  "predicted_soh_pct": 87.479
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 70,
+  "measured_soh_pct": 86.827,
+  "predicted_soh_pct": 87.109
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 71,
+  "measured_soh_pct": 86.661,
+  "predicted_soh_pct": 86.501
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 72,
+  "measured_soh_pct": 86.93,
+  "predicted_soh_pct": 87.658
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 73,
+  "measured_soh_pct": 87.161,
+  "predicted_soh_pct": 87.88
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 74,
+  "measured_soh_pct": 86.663,
+  "predicted_soh_pct": 88.19
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 75,
+  "measured_soh_pct": 86.495,
+  "predicted_soh_pct": 86.98
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 76,
+  "measured_soh_pct": 86.022,
+  "predicted_soh_pct": 85.704
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 77,
+  "measured_soh_pct": 86.221,
+  "predicted_soh_pct": 86.927
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 78,
+  "measured_soh_pct": 86.074,
+  "predicted_soh_pct": 85.815
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 79,
+  "measured_soh_pct": 85.987,
+  "predicted_soh_pct": 85.23
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 80,
+  "measured_soh_pct": 85.822,
+  "predicted_soh_pct": 85.44
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 81,
+  "measured_soh_pct": 85.56,
+  "predicted_soh_pct": 85.549
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 82,
+  "measured_soh_pct": 85.512,
+  "predicted_soh_pct": 86.527
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 83,
+  "measured_soh_pct": 85.655,
+  "predicted_soh_pct": 85.652
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 84,
+  "measured_soh_pct": 85.519,
+  "predicted_soh_pct": 85.087
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 85,
+  "measured_soh_pct": 85.323,
+  "predicted_soh_pct": 85.274
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 86,
+  "measured_soh_pct": 85.147,
+  "predicted_soh_pct": 85.755
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 87,
+  "measured_soh_pct": 85.363,
+  "predicted_soh_pct": 85.086
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 88,
+  "measured_soh_pct": 85.193,
+  "predicted_soh_pct": 84.938
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 89,
+  "measured_soh_pct": 85.398,
+  "predicted_soh_pct": 84.705
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 90,
+  "measured_soh_pct": 85.565,
+  "predicted_soh_pct": 85.165
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 91,
+  "measured_soh_pct": 85.706,
+  "predicted_soh_pct": 86.704
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 92,
+  "measured_soh_pct": 85.267,
+  "predicted_soh_pct": 85.284
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 93,
+  "measured_soh_pct": 84.673,
+  "predicted_soh_pct": 84.31
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 94,
+  "measured_soh_pct": 84.526,
+  "predicted_soh_pct": 84.295
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 95,
+  "measured_soh_pct": 85.039,
+  "predicted_soh_pct": 83.112
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 96,
+  "measured_soh_pct": 84.856,
+  "predicted_soh_pct": 84.898
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 97,
+  "measured_soh_pct": 84.99,
+  "predicted_soh_pct": 85.516
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 98,
+  "measured_soh_pct": 84.564,
+  "predicted_soh_pct": 85.025
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 99,
+  "measured_soh_pct": 84.286,
+  "predicted_soh_pct": 83.868
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 100,
+  "measured_soh_pct": 84.16,
+  "predicted_soh_pct": 83.475
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 101,
+  "measured_soh_pct": 84.644,
+  "predicted_soh_pct": 84.909
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 102,
+  "measured_soh_pct": 84.923,
+  "predicted_soh_pct": 86.059
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 103,
+  "measured_soh_pct": 84.679,
+  "predicted_soh_pct": 85.91
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 104,
+  "measured_soh_pct": 84.155,
+  "predicted_soh_pct": 84.515
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 105,
+  "measured_soh_pct": 84.252,
+  "predicted_soh_pct": 84.142
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 106,
+  "measured_soh_pct": 84.016,
+  "predicted_soh_pct": 83.525
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 107,
+  "measured_soh_pct": 84.72,
+  "predicted_soh_pct": 83.296
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 108,
+  "measured_soh_pct": 84.778,
+  "predicted_soh_pct": 85.984
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 109,
+  "measured_soh_pct": 84.209,
+  "predicted_soh_pct": 86.337
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 110,
+  "measured_soh_pct": 83.611,
+  "predicted_soh_pct": 85.489
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 111,
+  "measured_soh_pct": 83.38,
+  "predicted_soh_pct": 83.772
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 112,
+  "measured_soh_pct": 83.909,
+  "predicted_soh_pct": 83.055
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 113,
+  "measured_soh_pct": 84.567,
+  "predicted_soh_pct": 83.554
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 114,
+  "measured_soh_pct": 84.014,
+  "predicted_soh_pct": 84.454
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 115,
+  "measured_soh_pct": 83.657,
+  "predicted_soh_pct": 83.674
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 116,
+  "measured_soh_pct": 83.522,
+  "predicted_soh_pct": 82.666
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 117,
+  "measured_soh_pct": 83.299,
+  "predicted_soh_pct": 83.318
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 118,
+  "measured_soh_pct": 83.212,
+  "predicted_soh_pct": 82.091
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 119,
+  "measured_soh_pct": 83.342,
+  "predicted_soh_pct": 82.431
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 120,
+  "measured_soh_pct": 82.972,
+  "predicted_soh_pct": 82.265
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 121,
+  "measured_soh_pct": 83.121,
+  "predicted_soh_pct": 82.296
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 122,
+  "measured_soh_pct": 83.018,
+  "predicted_soh_pct": 82.246
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 123,
+  "measured_soh_pct": 83.051,
+  "predicted_soh_pct": 81.141
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 124,
+  "measured_soh_pct": 82.876,
+  "predicted_soh_pct": 82.318
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 125,
+  "measured_soh_pct": 82.539,
+  "predicted_soh_pct": 82.465
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 126,
+  "measured_soh_pct": 82.663,
+  "predicted_soh_pct": 81.919
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 127,
+  "measured_soh_pct": 82.471,
+  "predicted_soh_pct": 82.632
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 128,
+  "measured_soh_pct": 83.393,
+  "predicted_soh_pct": 80.534
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 129,
+  "measured_soh_pct": 83.543,
+  "predicted_soh_pct": 83.584
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 130,
+  "measured_soh_pct": 83.291,
+  "predicted_soh_pct": 84.405
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 131,
+  "measured_soh_pct": 82.665,
+  "predicted_soh_pct": 83.42
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 132,
+  "measured_soh_pct": 82.344,
+  "predicted_soh_pct": 83.728
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 133,
+  "measured_soh_pct": 83.595,
+  "predicted_soh_pct": 81.252
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 134,
+  "measured_soh_pct": 84.039,
+  "predicted_soh_pct": 83.013
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 135,
+  "measured_soh_pct": 83.689,
+  "predicted_soh_pct": 85.192
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 136,
+  "measured_soh_pct": 83.029,
+  "predicted_soh_pct": 83.968
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 137,
+  "measured_soh_pct": 82.799,
+  "predicted_soh_pct": 82.884
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 138,
+  "measured_soh_pct": 82.343,
+  "predicted_soh_pct": 83.043
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 139,
+  "measured_soh_pct": 82.873,
+  "predicted_soh_pct": 80.487
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 140,
+  "measured_soh_pct": 83.02,
+  "predicted_soh_pct": 83.384
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 141,
+  "measured_soh_pct": 82.304,
+  "predicted_soh_pct": 84.065
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 142,
+  "measured_soh_pct": 82.042,
+  "predicted_soh_pct": 82.458
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 143,
+  "measured_soh_pct": 81.722,
+  "predicted_soh_pct": 82.067
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 144,
+  "measured_soh_pct": 81.87,
+  "predicted_soh_pct": 81.318
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 145,
+  "measured_soh_pct": 82.369,
+  "predicted_soh_pct": 82.727
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 146,
+  "measured_soh_pct": 82.728,
+  "predicted_soh_pct": 82.994
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 147,
+  "measured_soh_pct": 82.045,
+  "predicted_soh_pct": 84.39
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 148,
+  "measured_soh_pct": 81.326,
+  "predicted_soh_pct": 83.073
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 149,
+  "measured_soh_pct": 81.087,
+  "predicted_soh_pct": 79.855
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 150,
+  "measured_soh_pct": 81.241,
+  "predicted_soh_pct": 80.887
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 151,
+  "measured_soh_pct": 80.94,
+  "predicted_soh_pct": 80.865
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 152,
+  "measured_soh_pct": 80.687,
+  "predicted_soh_pct": 80.525
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 153,
+  "measured_soh_pct": 80.601,
+  "predicted_soh_pct": 81.36
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 154,
+  "measured_soh_pct": 83.355,
+  "predicted_soh_pct": 79.316
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 155,
+  "measured_soh_pct": 84.251,
+  "predicted_soh_pct": 85.585
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 156,
+  "measured_soh_pct": 83.933,
+  "predicted_soh_pct": 84.94
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 157,
+  "measured_soh_pct": 83.649,
+  "predicted_soh_pct": 84.73
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 158,
+  "measured_soh_pct": 83.325,
+  "predicted_soh_pct": 84.028
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 159,
+  "measured_soh_pct": 83.492,
+  "predicted_soh_pct": 84.157
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 160,
+  "measured_soh_pct": 83.734,
+  "predicted_soh_pct": 83.614
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 161,
+  "measured_soh_pct": 83.325,
+  "predicted_soh_pct": 84.57
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 162,
+  "measured_soh_pct": 82.611,
+  "predicted_soh_pct": 83.202
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 163,
+  "measured_soh_pct": 82.314,
+  "predicted_soh_pct": 83.279
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 164,
+  "measured_soh_pct": 82.12,
+  "predicted_soh_pct": 82.035
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 165,
+  "measured_soh_pct": 82.559,
+  "predicted_soh_pct": 81.941
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 166,
+  "measured_soh_pct": 82.408,
+  "predicted_soh_pct": 83.403
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 167,
+  "measured_soh_pct": 82.394,
+  "predicted_soh_pct": 84.198
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 168,
+  "measured_soh_pct": 81.792,
+  "predicted_soh_pct": 82.455
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 169,
+  "measured_soh_pct": 81.662,
+  "predicted_soh_pct": 81.642
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 170,
+  "measured_soh_pct": 81.496,
+  "predicted_soh_pct": 81.583
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 171,
+  "measured_soh_pct": 81.939,
+  "predicted_soh_pct": 81.797
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 172,
+  "measured_soh_pct": 81.798,
+  "predicted_soh_pct": 82.348
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 173,
+  "measured_soh_pct": 81.557,
+  "predicted_soh_pct": 82.348
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 174,
+  "measured_soh_pct": 81.101,
+  "predicted_soh_pct": 82.459
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 175,
+  "measured_soh_pct": 82.08,
+  "predicted_soh_pct": 80.694
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 176,
+  "measured_soh_pct": 81.266,
+  "predicted_soh_pct": 82.484
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 177,
+  "measured_soh_pct": 80.981,
+  "predicted_soh_pct": 82.133
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 178,
+  "measured_soh_pct": 80.621,
+  "predicted_soh_pct": 81.426
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 179,
+  "measured_soh_pct": 80.388,
+  "predicted_soh_pct": 81.023
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 180,
+  "measured_soh_pct": 80.44,
+  "predicted_soh_pct": 80.879
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 181,
+  "measured_soh_pct": 80.418,
+  "predicted_soh_pct": 79.984
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 182,
+  "measured_soh_pct": 80.341,
+  "predicted_soh_pct": 80.968
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 183,
+  "measured_soh_pct": 80.088,
+  "predicted_soh_pct": 80.871
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 184,
+  "measured_soh_pct": 79.746,
+  "predicted_soh_pct": 81.009
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 185,
+  "measured_soh_pct": 79.691,
+  "predicted_soh_pct": 80.305
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 186,
+  "measured_soh_pct": 79.601,
+  "predicted_soh_pct": 78.581
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 187,
+  "measured_soh_pct": 79.237,
+  "predicted_soh_pct": 80.234
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 188,
+  "measured_soh_pct": 78.817,
+  "predicted_soh_pct": 80.421
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 189,
+  "measured_soh_pct": 78.601,
+  "predicted_soh_pct": 79.427
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 190,
+  "measured_soh_pct": 78.649,
+  "predicted_soh_pct": 79.176
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 191,
+  "measured_soh_pct": 79.849,
+  "predicted_soh_pct": 79.435
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 192,
+  "measured_soh_pct": 79.786,
+  "predicted_soh_pct": 81.544
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 193,
+  "measured_soh_pct": 78.975,
+  "predicted_soh_pct": 81.576
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 194,
+  "measured_soh_pct": 78.147,
+  "predicted_soh_pct": 80.041
+ },
+ {
+  "cell_id": "B0036",
+  "cycle": 195,
+  "measured_soh_pct": 77.956,
+  "predicted_soh_pct": 79.22
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 1,
+  "measured_soh_pct": 86.573,
+  "predicted_soh_pct": 88.849
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 2,
+  "measured_soh_pct": 86.412,
+  "predicted_soh_pct": 86.819
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 3,
+  "measured_soh_pct": 86.017,
+  "predicted_soh_pct": 85.982
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 4,
+  "measured_soh_pct": 86.109,
+  "predicted_soh_pct": 85.427
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 5,
+  "measured_soh_pct": 85.433,
+  "predicted_soh_pct": 81.421
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 6,
+  "measured_soh_pct": 85.182,
+  "predicted_soh_pct": 84.523
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 7,
+  "measured_soh_pct": 84.792,
+  "predicted_soh_pct": 84.142
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 8,
+  "measured_soh_pct": 84.745,
+  "predicted_soh_pct": 84.012
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 9,
+  "measured_soh_pct": 84.374,
+  "predicted_soh_pct": 88.633
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 10,
+  "measured_soh_pct": 84.299,
+  "predicted_soh_pct": 83.542
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 11,
+  "measured_soh_pct": 83.914,
+  "predicted_soh_pct": 83.412
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 12,
+  "measured_soh_pct": 83.698,
+  "predicted_soh_pct": 83.643
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 13,
+  "measured_soh_pct": 83.612,
+  "predicted_soh_pct": 83.165
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 14,
+  "measured_soh_pct": 83.799,
+  "predicted_soh_pct": 88.409
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 15,
+  "measured_soh_pct": 83.091,
+  "predicted_soh_pct": 82.424
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 16,
+  "measured_soh_pct": 83.034,
+  "predicted_soh_pct": 83.074
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 17,
+  "measured_soh_pct": 82.653,
+  "predicted_soh_pct": 82.585
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 18,
+  "measured_soh_pct": 82.498,
+  "predicted_soh_pct": 82.352
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 19,
+  "measured_soh_pct": 84.065,
+  "predicted_soh_pct": 86.465
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 20,
+  "measured_soh_pct": 83.503,
+  "predicted_soh_pct": 87.037
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 21,
+  "measured_soh_pct": 83.359,
+  "predicted_soh_pct": 82.476
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 22,
+  "measured_soh_pct": 82.844,
+  "predicted_soh_pct": 82.401
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 23,
+  "measured_soh_pct": 82.249,
+  "predicted_soh_pct": 81.577
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 24,
+  "measured_soh_pct": 81.961,
+  "predicted_soh_pct": 81.26
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 25,
+  "measured_soh_pct": 82.053,
+  "predicted_soh_pct": 85.173
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 26,
+  "measured_soh_pct": 82.163,
+  "predicted_soh_pct": 81.516
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 27,
+  "measured_soh_pct": 81.493,
+  "predicted_soh_pct": 81.539
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 28,
+  "measured_soh_pct": 81.193,
+  "predicted_soh_pct": 80.628
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 29,
+  "measured_soh_pct": 80.931,
+  "predicted_soh_pct": 80.58
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 30,
+  "measured_soh_pct": 80.967,
+  "predicted_soh_pct": 84.591
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 31,
+  "measured_soh_pct": 80.73,
+  "predicted_soh_pct": 80.352
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 32,
+  "measured_soh_pct": 80.36,
+  "predicted_soh_pct": 80.21
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 33,
+  "measured_soh_pct": 80.063,
+  "predicted_soh_pct": 79.581
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 34,
+  "measured_soh_pct": 79.702,
+  "predicted_soh_pct": 79.5
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 35,
+  "measured_soh_pct": 79.734,
+  "predicted_soh_pct": 83.301
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 36,
+  "measured_soh_pct": 79.41,
+  "predicted_soh_pct": 79.199
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 37,
+  "measured_soh_pct": 79.399,
+  "predicted_soh_pct": 78.987
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 38,
+  "measured_soh_pct": 78.996,
+  "predicted_soh_pct": 79.216
+ },
+ {
+  "cell_id": "B0042",
+  "cycle": 39,
+  "measured_soh_pct": 78.28,
+  "predicted_soh_pct": 78.651
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 1,
+  "measured_soh_pct": 84.778,
+  "predicted_soh_pct": 83.331
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 2,
+  "measured_soh_pct": 84.075,
+  "predicted_soh_pct": 83.111
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 3,
+  "measured_soh_pct": 83.932,
+  "predicted_soh_pct": 82.885
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 4,
+  "measured_soh_pct": 83.471,
+  "predicted_soh_pct": 82.075
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 5,
+  "measured_soh_pct": 83.06,
+  "predicted_soh_pct": 78.773
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 6,
+  "measured_soh_pct": 82.532,
+  "predicted_soh_pct": 81.588
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 7,
+  "measured_soh_pct": 82.121,
+  "predicted_soh_pct": 81.354
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 8,
+  "measured_soh_pct": 81.768,
+  "predicted_soh_pct": 80.501
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 9,
+  "measured_soh_pct": 81.662,
+  "predicted_soh_pct": 85.684
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 10,
+  "measured_soh_pct": 81.294,
+  "predicted_soh_pct": 80.589
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 11,
+  "measured_soh_pct": 80.899,
+  "predicted_soh_pct": 79.876
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 12,
+  "measured_soh_pct": 80.683,
+  "predicted_soh_pct": 79.583
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 13,
+  "measured_soh_pct": 80.291,
+  "predicted_soh_pct": 79.616
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 14,
+  "measured_soh_pct": 80.168,
+  "predicted_soh_pct": 83.992
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 15,
+  "measured_soh_pct": 79.757,
+  "predicted_soh_pct": 79.363
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 16,
+  "measured_soh_pct": 79.391,
+  "predicted_soh_pct": 79.728
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 17,
+  "measured_soh_pct": 79.003,
+  "predicted_soh_pct": 78.663
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 18,
+  "measured_soh_pct": 78.778,
+  "predicted_soh_pct": 78.716
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 19,
+  "measured_soh_pct": 79.751,
+  "predicted_soh_pct": 83.263
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 20,
+  "measured_soh_pct": 79.49,
+  "predicted_soh_pct": 83.203
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 21,
+  "measured_soh_pct": 79.04,
+  "predicted_soh_pct": 78.711
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 22,
+  "measured_soh_pct": 78.522,
+  "predicted_soh_pct": 78.681
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 23,
+  "measured_soh_pct": 78.217,
+  "predicted_soh_pct": 77.932
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 24,
+  "measured_soh_pct": 77.915,
+  "predicted_soh_pct": 78.095
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 25,
+  "measured_soh_pct": 77.686,
+  "predicted_soh_pct": 81.713
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 26,
+  "measured_soh_pct": 77.476,
+  "predicted_soh_pct": 77.361
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 27,
+  "measured_soh_pct": 77.122,
+  "predicted_soh_pct": 77.457
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 28,
+  "measured_soh_pct": 77.128,
+  "predicted_soh_pct": 78.001
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 29,
+  "measured_soh_pct": 76.547,
+  "predicted_soh_pct": 77.118
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 30,
+  "measured_soh_pct": 76.239,
+  "predicted_soh_pct": 79.257
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 31,
+  "measured_soh_pct": 75.984,
+  "predicted_soh_pct": 76.437
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 32,
+  "measured_soh_pct": 75.618,
+  "predicted_soh_pct": 76.19
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 33,
+  "measured_soh_pct": 74.996,
+  "predicted_soh_pct": 76.389
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 34,
+  "measured_soh_pct": 74.621,
+  "predicted_soh_pct": 75.741
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 35,
+  "measured_soh_pct": 74.631,
+  "predicted_soh_pct": 76.835
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 36,
+  "measured_soh_pct": 74.62,
+  "predicted_soh_pct": 75.5
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 37,
+  "measured_soh_pct": 74.265,
+  "predicted_soh_pct": 75.28
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 38,
+  "measured_soh_pct": 73.86,
+  "predicted_soh_pct": 75.234
+ },
+ {
+  "cell_id": "B0043",
+  "cycle": 39,
+  "measured_soh_pct": 73.474,
+  "predicted_soh_pct": 74.828
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 1,
+  "measured_soh_pct": 83.123,
+  "predicted_soh_pct": 84.851
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 2,
+  "measured_soh_pct": 82.67,
+  "predicted_soh_pct": 83.666
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 3,
+  "measured_soh_pct": 82.261,
+  "predicted_soh_pct": 83.329
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 4,
+  "measured_soh_pct": 81.783,
+  "predicted_soh_pct": 83.508
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 5,
+  "measured_soh_pct": 81.339,
+  "predicted_soh_pct": 79.097
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 6,
+  "measured_soh_pct": 80.799,
+  "predicted_soh_pct": 82.14
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 7,
+  "measured_soh_pct": 80.38,
+  "predicted_soh_pct": 82.521
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 8,
+  "measured_soh_pct": 80.017,
+  "predicted_soh_pct": 81.859
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 9,
+  "measured_soh_pct": 79.894,
+  "predicted_soh_pct": 85.682
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 10,
+  "measured_soh_pct": 79.502,
+  "predicted_soh_pct": 81.935
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 11,
+  "measured_soh_pct": 79.082,
+  "predicted_soh_pct": 81.598
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 12,
+  "measured_soh_pct": 78.573,
+  "predicted_soh_pct": 81.576
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 13,
+  "measured_soh_pct": 78.161,
+  "predicted_soh_pct": 81.251
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 14,
+  "measured_soh_pct": 78.034,
+  "predicted_soh_pct": 83.133
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 15,
+  "measured_soh_pct": 77.619,
+  "predicted_soh_pct": 81.46
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 16,
+  "measured_soh_pct": 77.223,
+  "predicted_soh_pct": 80.715
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 17,
+  "measured_soh_pct": 76.828,
+  "predicted_soh_pct": 80.17
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 18,
+  "measured_soh_pct": 76.536,
+  "predicted_soh_pct": 80.171
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 19,
+  "measured_soh_pct": 77.262,
+  "predicted_soh_pct": 81.291
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 20,
+  "measured_soh_pct": 76.986,
+  "predicted_soh_pct": 82.09
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 21,
+  "measured_soh_pct": 76.527,
+  "predicted_soh_pct": 79.611
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 22,
+  "measured_soh_pct": 75.999,
+  "predicted_soh_pct": 79.768
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 23,
+  "measured_soh_pct": 75.683,
+  "predicted_soh_pct": 79.289
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 24,
+  "measured_soh_pct": 75.064,
+  "predicted_soh_pct": 79.674
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 25,
+  "measured_soh_pct": 75.119,
+  "predicted_soh_pct": 79.209
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 26,
+  "measured_soh_pct": 74.905,
+  "predicted_soh_pct": 78.536
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 27,
+  "measured_soh_pct": 74.533,
+  "predicted_soh_pct": 78.131
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 28,
+  "measured_soh_pct": 74.22,
+  "predicted_soh_pct": 78.383
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 29,
+  "measured_soh_pct": 73.627,
+  "predicted_soh_pct": 77.98
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 30,
+  "measured_soh_pct": 73.316,
+  "predicted_soh_pct": 77.152
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 31,
+  "measured_soh_pct": 73.356,
+  "predicted_soh_pct": 77.636
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 32,
+  "measured_soh_pct": 72.969,
+  "predicted_soh_pct": 76.459
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 33,
+  "measured_soh_pct": 72.34,
+  "predicted_soh_pct": 76.847
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 34,
+  "measured_soh_pct": 71.953,
+  "predicted_soh_pct": 76.894
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 35,
+  "measured_soh_pct": 71.95,
+  "predicted_soh_pct": 74.911
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 36,
+  "measured_soh_pct": 71.931,
+  "predicted_soh_pct": 76.797
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 37,
+  "measured_soh_pct": 71.567,
+  "predicted_soh_pct": 75.88
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 38,
+  "measured_soh_pct": 71.149,
+  "predicted_soh_pct": 75.876
+ },
+ {
+  "cell_id": "B0044",
+  "cycle": 39,
+  "measured_soh_pct": 70.751,
+  "predicted_soh_pct": 75.581
+ }
+]
